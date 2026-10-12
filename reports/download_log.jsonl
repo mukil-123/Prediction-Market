@@ -1,0 +1,8 @@
+{"event":"downloaded","market_id":"KXTEMPMIAH-26OCT0107-T83.99","rows":1}
+{"event":"downloaded","market_id":"KXTTELITEMATCH-26OCT010650MRUKWL-KWL","rows":2}
+{"event":"downloaded","market_id":"KXTTELITEMATCH-26OCT010835MOLGPO-GPO","rows":3}
+{"event":"downloaded","market_id":"KXTTELITEMATCH-26OCT010840MMISRA-MMI","rows":4}
+{"event":"downloaded","market_id":"KXTTELITEMATCH-26OCT010845PWIWGL-PWI","rows":5}
+{"event":"downloaded","market_id":"KXTTELITEMATCH-26OCT010900JKWKKA-JKW","rows":6}
+{"event":"downloaded","market_id":"KXTTSTARMATCH-26OCT010830KOLKES-KES","rows":7}
+{"dataset":"/workspace/scratch/7a71a5a368e8/prediction-market-alpha/data/processed/kalshi_validation.json","issues":12,"normalized_snapshots":7,"raw_markets":100,"status":"DATA_INVALID"}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-01",
+  "registered_strategy_hypotheses": 5,
+  "implemented_probability_variants": 2,
+  "valid_trading_hypotheses_tested": 0,
+  "final_oos_tests_opened": 0,
+  "trials": [
+    {
+      "id": "PM-C1-v0.1",
+      "model": "beta-bin-market-prior-v0.1",
+      "bins": 20,
+      "prior_strength": 20,
+      "filters": [
+        "binary final settlement",
+        "one lexical market per event",
+        "verified availability",
+        "verified historical fees",
+        "execution depth"
+      ],
+      "status": "DATA_FEASIBILITY",
+      "parameter_optimization": false
+    },
+    {
+      "id": "KALSHI-VALIDATION-001",
+      "universe": "first 100 recent settled non-MVE market listings",
+      "entry_snapshot": "10 minutes after open",
+      "status": "DESCRIPTIVE_ONLY",
+      "not_oos": true
+    },
+    {
+      "id": "SYNTHETIC-UNIT-TESTS",
+      "status": "SOFTWARE_VERIFICATION_ONLY",
+      "included_in_performance": false
+    },
+    {
+      "id": "POLYMARKET-FEASIBILITY-RECENT-001",
+      "universe": "first 10 closed markets with start_date_min 2026-01-01T00:00:00Z",
+      "snapshot": "24 hours after explicit startDate; nonsettlement observation <=3h old",
+      "reason": "Initial three markets dated 2020 and returned empty history",
+      "status": "DATA_FEASIBILITY_NOT_OOS",
+      "included_in_strategy_performance": false
+    },
+    {
+      "id": "KALSHI-SHADOW-KXBTC15M",
+      "universe": "explicit live series KXBTC15M",
+      "reason": "First five generic listed live markets had no two-sided books",
+      "status": "BOOK_FEASIBILITY_ONLY_NO_STRATEGY_SELECTION"
+    },
+    {
+      "id": "PM-C1-FORWARD-001",
+      "version": "v0.2",
+      "status": "BLOCKED_PROTOCOL_ERROR",
+      "reason": "One hour before settlement can be after close; retired before cohort outcomes/entries",
+      "parameter_optimization": false,
+      "included_in_performance": false
+    },
+    {
+      "id": "PM-C1-FORWARD-002",
+      "version": "v0.3",
+      "status": "BLOCKED_INGESTION_TIME_FIELD",
+      "reason": "Provisional nomination time could use earlier metadata availability; retired before entries",
+      "parameter_optimization": false,
+      "included_in_performance": false
+    },
+    {
+      "id": "PM-C1-FORWARD-003",
+      "version": "v0.3.1",
+      "status": "FROZEN_FORWARD_COLLECTION",
+      "observation": "first completed capture in 180s window beginning one hour before close",
+      "model": "20 bins, strength20",
+      "splits": "200TRAIN/100VALIDATION/200TEST events",
+      "parameter_optimization": false,
+      "test_opened": false
+    },
+    {
+      "id": "PM-W1-v0.2",
+      "status": "FORWARD_PREDICTOR_ARCHIVE_CONTRACT_ALIGNMENT_BLOCKED",
+      "model": "empirical station/source/variable/horizon TRAIN residual CDF, minimum30 dates",
+      "parameter_optimization": false,
+      "real_trained_models": 0,
+      "threshold_selected": false
+    },
+    {
+      "id": "PM-M1-FREE-001",
+      "status": "DEFERRED_DATA_LIMITATION",
+      "reason": "Coinbase/Kraken GETs returned unavailable HTML in environment; venue clock/CF benchmark match also unverified",
+      "spot_samples": 0,
+      "included_in_performance": false
+    },
+    {
+      "id": "PM-M1-DATA-BINANCE-001",
+      "status": "DEFERRED_DATA_LIMITATION",
+      "access_status": 451,
+      "underlying_samples": 0,
+      "data_experiment_only": true,
+      "strategy_hypothesis_reopened": false,
+      "included_in_performance": false
+    },
+    {
+      "id": "PM-C1-SHADOW-ORCHESTRATION-001",
+      "status": "PREREGISTERED_SOFTWARE_INTEGRATION_ONLY",
+      "specification": "docs/SHADOW_ORCHESTRATION_001.md",
+      "spec_sha256": "adf4cbc42d0a3b3143cea33dc1523d15557359df7909e8cf28cf5d1b56d2c609",
+      "parameter_optimization": false,
+      "included_in_performance": false,
+      "frozen_forward_rules_changed": false,
+      "test_opened": false
+    }
+  ]
+}

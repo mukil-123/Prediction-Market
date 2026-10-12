@@ -1,0 +1,17 @@
+# PM-C1-SHADOW-ORCHESTRATION-001 — preregistration
+
+Registered 2026-10-11 UTC (2026-10-12 Asia/Calcutta), before implementation and technical evaluation. This is a versioned integration rule, not a new profitable mechanism or a change to PM-C1-FORWARD-003.
+
+Reuse the original cohort, 20-bin calibration, fee arithmetic, paper OMS and risk ceilings. No threshold is selected by this work. A future reviewed, hash-bound policy must provide a threshold from the original frozen grid and independently satisfied acceptance gates. The policy must bind the frozen definition and TRAIN model, with point-in-time evidence for every gate. No automatic TEST opening or live promotion is provided.
+
+Eligibility for shadow allocation is stricter than collection eligibility: exact-source review, current lawful public-access/documentation review, verified venue minimum/step, known timestamped fee parameters, valid original receipt times, fresh executable depth, and an approved model/cost policy are required. Missing prerequisites produce a recorded abstention. Weather remains SOURCE_BLOCKED; microstructure remains DEFERRED_DATA_LIMITATION. Historical observations and locked exclusions are never repaired.
+
+After admission, rank by conservative lower-bound net EV per payout share at the worst executable ask within the OMS limit, including original conservative fee rounding and 0.005/share slippage. Break ties lexically by platform/event/market. Select at most three positions, sequentially under the unchanged risk engine. All markets share the original conservative correlation group; pending paper decisions reserve cash and exposure. Existing positions and pending decisions prevent duplicate market allocation. Below-minimum sizes stay zero. This rule has no empirical edge claim; any change requires a new rule/trial version.
+
+Each stage is appended with its status, reason, input identities and UTC calculation time. A book/version produces at most one OMS decision. A later independently received book is required to fill. Recovery reuses prior decisions and fills. Only explicit binary payouts received after the decision and not before the fill can settle a position. Protected cohort outcomes are never read for reporting/selection; reconciliation queries only market identities of admitted paper positions.
+
+The shadow account opens with zero cash. Contribution amount/unit/start date must be configured explicitly. Due schedules and confirmed simulated deposits are distinct append-only events. Repeated confirmation cannot duplicate funds. Budget amendments apply prospectively; no automatic bank transfer exists. Non-USD units cannot fund USD payout shares without a separately supported conversion mechanism, which is not implemented. Deposits, other income, withdrawals, cash, pending/open commitments, realized net trading P&L, executable unrealized P&L, and fees are reported separately. Unavailable liquidation marks stay unknown.
+
+Technical integration fixtures are explicitly labeled and isolated from the imported ledger; their forecasts, approval flags and P&L establish software behavior only. Real conclusions require admissible data and the original research gates. No real-data performance is inspected by this integration task.
+
+Remaining live boundary: existing DisabledLiveAdapter continues to throw. No credentials, signing, order placement, bank transfer, paid dependency or live endpoint is added. A contribution setting never authorizes live orders.

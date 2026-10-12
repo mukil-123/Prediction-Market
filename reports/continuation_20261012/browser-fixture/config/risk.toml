@@ -1,0 +1,7 @@
+# May be made stricter. Code rejects any increase above immutable ceilings.
+normal_position_fraction = 0.0025
+hard_position_fraction = 0.005
+cluster_fraction = 0.01
+portfolio_fraction = 0.02
+fractional_kelly = 0.10
+initial_bankroll = 100.0

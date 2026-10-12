@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-10-08T11:10:23.137664+00:00",
+  "saved_pid": 2,
+  "proc_pid_exists": false,
+  "reason": "Prior session process absent; stale control lock removed after process check",
+  "collector_rules_changed": false
+}

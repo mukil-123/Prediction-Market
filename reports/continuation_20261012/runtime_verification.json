@@ -1,0 +1,39 @@
+{
+  "preflight": {
+    "frozen_sha256": "cc9f69d812d99b80d120c1e63a54287d85dc776bb0645c57f2e5899a5830e3d0",
+    "live_trading": false,
+    "audit_valid": true
+  },
+  "forward_integrity": {
+    "valid": true,
+    "issues": [],
+    "raw_hashes_checked": 1141,
+    "snapshots_checked": 841,
+    "source_archives_checked": 15,
+    "live_trading": false
+  },
+  "raw_replay": {
+    "valid": true,
+    "books_replayed": 841,
+    "forecasts_replayed": 232,
+    "issues": []
+  },
+  "shadow_replay": {
+    "valid": true,
+    "issues": [],
+    "records_replayed": 2205,
+    "cash_balance": 0.0,
+    "available_cash": 0.0,
+    "open_positions": 0,
+    "pending_orders": 0,
+    "settlements": 0,
+    "realized_trading_pnl": 0.0,
+    "fees": 0.0,
+    "live_trading": false,
+    "real_orders": 0,
+    "evidence_type": "REAL_FORWARD_DATA"
+  },
+  "valid": true,
+  "live_trading": false,
+  "real_orders": 0
+}

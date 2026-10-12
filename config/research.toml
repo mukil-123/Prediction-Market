@@ -1,0 +1,14 @@
+strategy_version = "PM-C1-v0.1"
+model_version = "beta-bin-market-prior-v0.1"
+seed = 20261001
+bins = 20
+prior_strength = 20.0
+minimum_bin_samples = 20
+minimum_net_edge = 0.02
+slippage_per_share = 0.005
+train_fraction = 0.60
+validation_fraction = 0.20
+entry_horizon_hours = 24
+maximum_quote_age_hours = 3
+monte_carlo_paths = 10000
+live_trading = false

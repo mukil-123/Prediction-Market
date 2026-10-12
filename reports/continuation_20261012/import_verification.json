@@ -1,0 +1,93 @@
+{
+  "as_of_utc": "2026-10-11T18:38:06.138307+00:00",
+  "transfer_manifest_issues": [],
+  "integrity": {
+    "valid": true,
+    "issues": [],
+    "raw_hashes_checked": 1141,
+    "snapshots_checked": 841,
+    "source_archives_checked": 14,
+    "live_trading": false
+  },
+  "replay": {
+    "valid": true,
+    "books_replayed": 841,
+    "forecasts_replayed": 232,
+    "issues": []
+  },
+  "status": {
+    "generated_at": "2026-10-11T18:38:06.146422+00:00",
+    "live_trading": false,
+    "real_orders": 0,
+    "verified_edge": "NONE",
+    "service_cost_usd": 0,
+    "counts": {
+      "books": 841,
+      "forecasts": 232,
+      "observations": 26,
+      "settlements": 62
+    },
+    "collector": {
+      "state": "STOPPED",
+      "recorded_state": "STOPPED",
+      "owned_process_running": false,
+      "heartbeat_fresh": false,
+      "heartbeat_age_seconds": 285624.295465,
+      "last_book_age_seconds": 285654.427197,
+      "lock_exists": false,
+      "stop_requested": true,
+      "last_exit_code": null
+    },
+    "cohort": {
+      "id": "PM-C1-FORWARD-003",
+      "frozen_intact": true,
+      "nominations": 10,
+      "eligible_train": 0,
+      "resolved_train": 0,
+      "training_required": 200,
+      "excluded": 8,
+      "test_opened": false,
+      "model_ready": false,
+      "after_cost_expectancy": null
+    },
+    "streams": [
+      {
+        "id": "PM-C1",
+        "state": "WAITING_FOR_ELIGIBLE_TRAIN"
+      },
+      {
+        "id": "PM-W1",
+        "state": "SOURCE_BLOCKED"
+      },
+      {
+        "id": "PM-M1",
+        "state": "DEFERRED_DATA_LIMITATION"
+      }
+    ],
+    "markets": [],
+    "quality": {
+      "integrity_rejections": 10,
+      "api_failures": 17,
+      "cadence_warnings": 61,
+      "runtime_gaps": 7,
+      "latest_rejection": {
+        "market_id": "KXBTC15M-26OCT080715-15",
+        "reason": "DataInvalid:Missing two-sided YES/NO depth",
+        "timestamp": "2026-10-08T11:14:28.591932+00:00"
+      },
+      "latest_cadence_warning": {
+        "market_id": null,
+        "reason": "Cycle required 103.58s versus 30s target; no catch-up burst",
+        "timestamp": "2026-10-08T11:17:41.784132+00:00"
+      }
+    },
+    "verification": {
+      "state": "NOT_RUN_THIS_SESSION"
+    },
+    "lead": {
+      "shortcode": "DdTwFSqp3mS",
+      "status": "AWAITING_SOURCE_CONTENT",
+      "claim": "UNVERIFIED"
+    }
+  }
+}

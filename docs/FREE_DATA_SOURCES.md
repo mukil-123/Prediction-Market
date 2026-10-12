@@ -1,0 +1,32 @@
+# Free sources checked 2026-10-01
+
+All ingestion is public GET, $0 service/API bill. Availability means first local receipt unless explicitly better supported. Source cycle/update timestamps never become presumed public availability. References below are primary documentation; exact API payload hashes and receipt times live in the collector ledger.
+
+| Source / endpoint | Coverage, availability and schedule | Time/revision/archive limits | Free rate policy and status |
+|---|---|---|---|
+| NWS `https://api.weather.gov/points/{lat},{lon}`, returned `/gridpoints/{office}/{x},{y}/forecast` | US NWS coverage; grid/period deterministic forecast. Updates follow forecaster/data changes, not a promised fixed release interval. | `updateTime`, period start/end; revised current forecast overwrites upstream endpoint. Local vintages are captured. No original forecast-vintage archive established through this endpoint. | Explicitly free/no current key; identified UA required; numeric limit unpublished. Our location poll 15 min, host GET spacing >=10s. **Implemented and observed working.** |
+| NWS `/stations/{id}/observations/latest` | Operational station observations, often hourly; coverage varies with station. | Measurement time differs from availability; QC/delay/null fields possible. Latest is not a final daily climate result. Current API documentation describes upstream observation issues. | Same conservative NWS limit policy. **Implemented and captured KMIA/KNYC observations.** |
+| NWS `/products` and climate reports | Potential official daily climate source for contracts explicitly using it. | Product issue/revision/preliminary rules must match contract. Climate product identifier is not station identity. | Free; no numeric quota assumption. **Researched, final-label adapter not implemented/verified.** |
+| NCEI `https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries` | Historical station daily TMAX/TMIN/precipitation etc; global station datasets with varying coverage. | Measurement dates; revisions/QC and units/scaling require dataset documentation. A response downloaded now is not proof of its original historical release. NCEI observations do not supply past forecast vintages. | Public Access Data Service; selected instead of token-based CDO for investigation. No paid data used; numeric limit not asserted. **Future label feasibility, not a current contract label.** |
+| NOAA GEFS `https://nomads.ncep.noaa.gov/` GRIB filters | Global ensemble grids, nominal 00/06/12/18 UTC cycles; subset by variables/region/time. | Cycle initialization ≠ release. NOMADS is rolling real-time storage; long-term archives vary by dataset at NCEI/NOAA open data. GRIB decoding/location interpolation and member provenance are required. | Public access; operational limits/load and availability vary, no universal quota asserted. **Deferred to avoid download/parameter expansion before simple baseline validation.** |
+| NHC `https://www.nhc.noaa.gov/archive/2026/`, `https://www.nhc.noaa.gov/data/` | Atlantic/eastern Pacific tropical advisories/archives; routine advisories commonly six-hourly, intermediate/special updates when appropriate. | Preserve actual issued advisory/version, not later best-track analysis as a historical forecast. First availability still needs receipt/archive evidence. | Public official data. **Source research only; storm-contract baseline deferred.** |
+| Kalshi `https://external-api.kalshi.com/trade-api/v2` `/series/{id}`, `/markets`, `/markets/{id}/orderbook`, `/markets/{id}` | Event/rules, settlement sources, series fee parameters, public fixed-point depth and final result. | Books lack a usable exchange event timestamp; receipt-only synchronization. Metadata/fees are current vintages. Final result+timestamp required. | Authenticated tiers documented; unauthenticated numeric IP quota not established. <=1 GET/s recorder with backoff; no login. **Working current data.** |
+| Polymarket Gamma `/markets/keyset`; CLOB `/book`, `/clob-markets/{condition}`; Data `/v2/resolutions` | Binary discovery, both asset books, current fee curve, binary final payouts. | Book server ms timestamp and receipt skew; rules/fees captured prospectively. Fine historical depth/publication archive not established. | `/book`1500/10s, Gamma markets300/10s. **Adapter working; bounded pilot discovery produced no selected Polymarket book cohort.** |
+| Coinbase `https://api.exchange.coinbase.com/products/BTC-USD/book?level=2` | Public BTC/USD aggregated L2 in official docs; snapshot sequence/time where supplied. | Source clock alignment and CF BRTI settlement match unverified. | Official public10 GET/s, our probe at most1/s. **Environment returned HTML “Site Unavailable,” not JSON; stopped after one probe.** |
+| Kraken `https://api.kraken.com/0/public/Depth?pair=XBTUSD&count=10` | Public aggregated BTC/USD book in official docs. | Per-level update seconds are not whole-book publication time; no verified CF benchmark equivalence. | Public market-data limits are distinct from private/trading limits; conservative probe only. **Same HTML unavailable response; stopped after one probe.** |
+
+## Primary references
+
+- NWS API, pricing, identification, timestamps/issues: https://www.weather.gov/documentation/services-web-api
+- NCEI Access Data Service: https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
+- GEFS NOAA overview/archive links: https://emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gefs.php/
+- NOMADS current product schedule: https://nomads.ncep.noaa.gov/
+- NHC official archive: https://www.nhc.noaa.gov/data/ and https://www.nhc.noaa.gov/archive/2026/
+- Kalshi rate rules: https://docs.kalshi.com/getting_started/rate_limits
+- Kalshi source/fee schema: https://docs.kalshi.com/api-reference/market/get-series
+- Polymarket current rate limits: https://docs.polymarket.com/api-reference/rate-limits
+- Coinbase rate limits: https://docs.cdp.coinbase.com/exchange/rest-api/rate-limits
+- Coinbase L2 schema: https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-book
+- Kraken depth schema: https://docs.kraken.com/api-reference/market-data/get-order-book
+
+No official free API for exact current Weather Company/Synoptic final settlement methodology was verified. Their identity comes from actual market rules/series responses, not an assumption that every weather contract resolves through NOAA. Do not substitute other observations or buy a service to fill this gap.

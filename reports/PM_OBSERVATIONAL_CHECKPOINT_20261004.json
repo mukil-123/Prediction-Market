@@ -1,0 +1,206 @@
+{
+  "as_of_utc": "2026-10-04T09:24:49.376257+00:00",
+  "integrity": {
+    "valid": true,
+    "issues": [],
+    "raw_hashes_checked": 951,
+    "snapshots_checked": 695,
+    "source_archives_checked": 11,
+    "live_trading": false
+  },
+  "nominations_current_definition": 8,
+  "current_exclusions": [
+    {
+      "cohort_id": "PM-C1-FORWARD-003",
+      "definition_hash": "6368389a4891b59b0aadf0d39a483d288269b0ee9c483ec4942b04f5d6718a66",
+      "eligible": false,
+      "event_id": "KXHIGHMIA-26OCT01",
+      "excluded_at": "2026-10-02T09:19:47.518371+00:00",
+      "market_id": "KXHIGHMIA-26OCT01-B83.5",
+      "platform": "kalshi",
+      "reasons": [
+        "NO_VALID_BOOK_IN_FROZEN_OBSERVATION_WINDOW"
+      ],
+      "target_time": "2026-10-02T04:00:00+00:00"
+    },
+    {
+      "cohort_id": "PM-C1-FORWARD-003",
+      "definition_hash": "6368389a4891b59b0aadf0d39a483d288269b0ee9c483ec4942b04f5d6718a66",
+      "eligible": false,
+      "event_id": "KXHIGHNY-26OCT01",
+      "excluded_at": "2026-10-02T09:19:47.518371+00:00",
+      "market_id": "KXHIGHNY-26OCT01-B75.5",
+      "platform": "kalshi",
+      "reasons": [
+        "NO_VALID_BOOK_IN_FROZEN_OBSERVATION_WINDOW"
+      ],
+      "target_time": "2026-10-02T04:00:00+00:00"
+    },
+    {
+      "cohort_id": "PM-C1-FORWARD-003",
+      "definition_hash": "6368389a4891b59b0aadf0d39a483d288269b0ee9c483ec4942b04f5d6718a66",
+      "eligible": false,
+      "event_id": "KXHIGHMIA-26OCT02",
+      "excluded_at": "2026-10-03T11:28:19.025241+00:00",
+      "market_id": "KXHIGHMIA-26OCT02-B85.5",
+      "platform": "kalshi",
+      "reasons": [
+        "NO_VALID_BOOK_IN_FROZEN_OBSERVATION_WINDOW"
+      ],
+      "target_time": "2026-10-03T04:00:00+00:00"
+    },
+    {
+      "cohort_id": "PM-C1-FORWARD-003",
+      "definition_hash": "6368389a4891b59b0aadf0d39a483d288269b0ee9c483ec4942b04f5d6718a66",
+      "eligible": false,
+      "event_id": "KXHIGHNY-26OCT02",
+      "excluded_at": "2026-10-03T11:28:19.025241+00:00",
+      "market_id": "KXHIGHNY-26OCT02-B81.5",
+      "platform": "kalshi",
+      "reasons": [
+        "NO_VALID_BOOK_IN_FROZEN_OBSERVATION_WINDOW"
+      ],
+      "target_time": "2026-10-03T04:00:00+00:00"
+    },
+    {
+      "cohort_id": "PM-C1-FORWARD-003",
+      "definition_hash": "6368389a4891b59b0aadf0d39a483d288269b0ee9c483ec4942b04f5d6718a66",
+      "eligible": false,
+      "event_id": "KXHIGHMIA-26OCT03",
+      "excluded_at": "2026-10-04T07:17:18.952772+00:00",
+      "market_id": "KXHIGHMIA-26OCT03-B86.5",
+      "platform": "kalshi",
+      "reasons": [
+        "NO_VALID_BOOK_IN_FROZEN_OBSERVATION_WINDOW"
+      ],
+      "target_time": "2026-10-04T04:00:00+00:00"
+    },
+    {
+      "cohort_id": "PM-C1-FORWARD-003",
+      "definition_hash": "6368389a4891b59b0aadf0d39a483d288269b0ee9c483ec4942b04f5d6718a66",
+      "eligible": false,
+      "event_id": "KXHIGHNY-26OCT03",
+      "excluded_at": "2026-10-04T07:17:18.952772+00:00",
+      "market_id": "KXHIGHNY-26OCT03-B68.5",
+      "platform": "kalshi",
+      "reasons": [
+        "NO_VALID_BOOK_IN_FROZEN_OBSERVATION_WINDOW"
+      ],
+      "target_time": "2026-10-04T04:00:00+00:00"
+    }
+  ],
+  "new_resolution_records_since_saved_checkpoint": [
+    {
+      "endpoint": "https://external-api.kalshi.com/trade-api/v2/markets/KXBTC15M-26OCT031415-15",
+      "event_id": "KXBTC15M-26OCT031415",
+      "first_observed_at": "2026-10-03T18:19:54.317118+00:00",
+      "market_id": "KXBTC15M-26OCT031415-15",
+      "outcome": 0,
+      "platform": "kalshi",
+      "raw_response_hash": "babd3a80d9bf9ebde6fbf58d569b12f28e8f42835481e82e9f318eef6c54a010",
+      "resolved_at": "2026-10-03T18:15:07.162858+00:00"
+    },
+    {
+      "endpoint": "https://external-api.kalshi.com/trade-api/v2/markets/KXBTC15M-26OCT031430-30",
+      "event_id": "KXBTC15M-26OCT031430",
+      "first_observed_at": "2026-10-04T07:15:09.363744+00:00",
+      "market_id": "KXBTC15M-26OCT031430-30",
+      "outcome": 0,
+      "platform": "kalshi",
+      "raw_response_hash": "67a0508ded43ca7c184bba928aa5c24af47de8ed99f99646fd346bb420cb3c77",
+      "resolved_at": "2026-10-03T18:30:07.208427+00:00"
+    },
+    {
+      "endpoint": "https://external-api.kalshi.com/trade-api/v2/markets/KXBTC15M-26OCT040315-15",
+      "event_id": "KXBTC15M-26OCT040315",
+      "first_observed_at": "2026-10-04T07:16:21.778837+00:00",
+      "market_id": "KXBTC15M-26OCT040315-15",
+      "outcome": 0,
+      "platform": "kalshi",
+      "raw_response_hash": "6ff7bb2f55e8e1e83724a12adc38c3d8c0fb479ad57e8d83e7d147db09a5aac5",
+      "resolved_at": "2026-10-04T07:15:07.197390+00:00"
+    },
+    {
+      "endpoint": "https://external-api.kalshi.com/trade-api/v2/markets/KXBTC15M-26OCT040515-15",
+      "event_id": "KXBTC15M-26OCT040515",
+      "first_observed_at": "2026-10-04T09:17:12.044263+00:00",
+      "market_id": "KXBTC15M-26OCT040515-15",
+      "outcome": 1,
+      "platform": "kalshi",
+      "raw_response_hash": "01d65b4b1f5bad4571ed7a66cddd242e1035aa793653af22db558b22e9fad06a",
+      "resolved_at": "2026-10-04T09:15:07.135817+00:00"
+    }
+  ],
+  "collection_gaps": [
+    {
+      "detected_at": "2026-10-02T09:14:19.478510+00:00",
+      "gap_seconds_at_detection": 52696.828945,
+      "last_heartbeat_at": "2026-10-01T18:36:02.649565+00:00",
+      "last_snapshot_at": "2026-10-01T18:36:02.647615+00:00",
+      "live_trading": false,
+      "missing_data_policy": "No backfill or fabricated cohort observations",
+      "reason": "Prior exec session unavailable; no recorder command present in current process inventory; stale lock PID belongs to prior namespace"
+    },
+    {
+      "detected_at": "2026-10-02T10:13:11.270004+00:00",
+      "gap_seconds_at_detection": 3007.706402,
+      "last_heartbeat_at": "2026-10-02T09:23:03.563602+00:00",
+      "live_trading": false,
+      "missing_data_policy": "No backfill",
+      "reason": "Prior exec session expired; no recorder process found; resumed without changing code/config/cohort"
+    },
+    {
+      "detected_at": "2026-10-03T11:21:36.924350+00:00",
+      "gap_seconds_at_detection": 89377.250412,
+      "last_heartbeat_at": "2026-10-02T10:31:59.673938+00:00",
+      "live_trading": false,
+      "missing_data_policy": "No backfill; preserve missed windows and frozen cohort",
+      "reason": "Prior execution runtime expired; no collect-forward command present in process inventory"
+    },
+    {
+      "backfill": false,
+      "gap_seconds": 1966.483945,
+      "last_heartbeat": "2026-10-03T11:35:19.004431+00:00",
+      "live_trading": false,
+      "reason": "No collector process in current runtime; resume unchanged collector",
+      "recorded_at": "2026-10-03T12:08:05.488376+00:00"
+    },
+    {
+      "backfill": false,
+      "gap_seconds": 20231.329317,
+      "last_heartbeat": "2026-10-03T12:25:38.978617+00:00",
+      "live_trading": false,
+      "reason": "Execution runtime ended; no matching collect-forward process observed; stale PID not sufficient health evidence",
+      "timestamp": "2026-10-03T18:02:50.307934+00:00"
+    },
+    {
+      "backfill": false,
+      "gap_seconds": 46137.78827,
+      "last_heartbeat": "2026-10-03T18:23:23.334946+00:00",
+      "live_trading": false,
+      "reason": "Previous session capture process absent; saved PID status was not evidence of a live collector. Resume unchanged recorder and database.",
+      "timestamp": "2026-10-04T07:12:21.123216+00:00"
+    },
+    {
+      "backfill": false,
+      "gap_seconds": 6023.678124,
+      "last_heartbeat": "2026-10-04T07:19:35.912641+00:00",
+      "live_trading": false,
+      "reason": "Runtime session ended during conversation pause; no actual capture process present. Resume same collector without backfill.",
+      "timestamp": "2026-10-04T08:59:59.590765+00:00"
+    }
+  ],
+  "weather_contract_status_counts": {
+    "REJECTED_AMBIGUOUS": 62
+  },
+  "latest_rejected_book": {
+    "market_id": "KXBTC15M-26OCT040515-15",
+    "reason": "DataInvalid:Missing two-sided YES/NO depth",
+    "timestamp": "2026-10-04T09:14:38.129098+00:00"
+  },
+  "latest_cadence_warning": {
+    "market_id": null,
+    "reason": "Cycle required 289.24s versus 30s target; no catch-up burst",
+    "timestamp": "2026-10-04T09:24:35.748245+00:00"
+  }
+}

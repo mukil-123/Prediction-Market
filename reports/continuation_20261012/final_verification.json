@@ -1,0 +1,468 @@
+{
+  "as_of_utc": "2026-10-11T19:27:46.898278+00:00",
+  "import_archive_sha256": "eaeb7cc77b20662be16dfb2bf4fe3cd6431fc8ba4ece687041a2a80f3e372a79",
+  "preflight": {
+    "frozen_sha256": "cc9f69d812d99b80d120c1e63a54287d85dc776bb0645c57f2e5899a5830e3d0",
+    "live_trading": false,
+    "audit_valid": true
+  },
+  "baseline_audit_prefix_preserved": true,
+  "baseline_audit_rows": 4510,
+  "historical_ledger_rows_preserved": 4510,
+  "new_forward_audit_records": [
+    [
+      4511,
+      "recorder_manifest",
+      "recorder-manifest:1791743919129600533"
+    ],
+    [
+      4512,
+      "collector_heartbeat",
+      "heartbeat:1791743919139624700"
+    ],
+    [
+      4513,
+      "forward_api_failure",
+      "failure:1791743919154714205"
+    ],
+    [
+      4514,
+      "forward_source_failure",
+      "forward_source_failure:1791743919155615606"
+    ],
+    [
+      4515,
+      "collector_heartbeat",
+      "heartbeat:1791743919156524911"
+    ],
+    [
+      4516,
+      "forward_api_failure",
+      "failure:1791743920148162069"
+    ],
+    [
+      4517,
+      "forward_source_failure",
+      "forward_source_failure:1791743920149746701"
+    ],
+    [
+      4518,
+      "collector_heartbeat",
+      "heartbeat:1791743920150769448"
+    ],
+    [
+      4519,
+      "forward_api_failure",
+      "failure:1791743921145592837"
+    ],
+    [
+      4520,
+      "forward_source_failure",
+      "forward_source_failure:1791743921147190282"
+    ],
+    [
+      4521,
+      "collector_heartbeat",
+      "heartbeat:1791743921148323467"
+    ],
+    [
+      4522,
+      "forward_api_failure",
+      "failure:1791743922145779804"
+    ],
+    [
+      4523,
+      "forward_source_failure",
+      "forward_source_failure:1791743922147157037"
+    ],
+    [
+      4524,
+      "collector_heartbeat",
+      "heartbeat:1791743922148129150"
+    ],
+    [
+      4525,
+      "forward_api_failure",
+      "failure:1791743923146461763"
+    ],
+    [
+      4526,
+      "forward_source_failure",
+      "forward_source_failure:1791743923147632328"
+    ],
+    [
+      4527,
+      "forward_universe",
+      "universe:1791743923148499434"
+    ],
+    [
+      4528,
+      "forward_api_failure",
+      "failure:1791743924146701084"
+    ],
+    [
+      4529,
+      "forward_resolution_failure",
+      "forward_resolution_failure:1791743924147989811"
+    ],
+    [
+      4530,
+      "forward_api_failure",
+      "failure:1791743925146554814"
+    ],
+    [
+      4531,
+      "forward_resolution_failure",
+      "forward_resolution_failure:1791743925147929442"
+    ],
+    [
+      4532,
+      "forward_api_failure",
+      "failure:1791743926146688312"
+    ],
+    [
+      4533,
+      "forward_resolution_failure",
+      "forward_resolution_failure:1791743926148177544"
+    ],
+    [
+      4534,
+      "forward_api_failure",
+      "failure:1791743927147030739"
+    ],
+    [
+      4535,
+      "forward_resolution_failure",
+      "forward_resolution_failure:1791743927148248393"
+    ],
+    [
+      4536,
+      "forward_api_failure",
+      "failure:1791743928147258746"
+    ],
+    [
+      4537,
+      "forward_resolution_failure",
+      "forward_resolution_failure:1791743928148735455"
+    ],
+    [
+      4538,
+      "forward_api_failure",
+      "failure:1791743929147386631"
+    ],
+    [
+      4539,
+      "forward_resolution_failure",
+      "forward_resolution_failure:1791743929148770045"
+    ],
+    [
+      4540,
+      "forward_api_failure",
+      "failure:1791743930147111957"
+    ],
+    [
+      4541,
+      "forward_resolution_failure",
+      "forward_resolution_failure:1791743930148458592"
+    ],
+    [
+      4542,
+      "forward_api_failure",
+      "failure:1791743931147182056"
+    ],
+    [
+      4543,
+      "forward_resolution_failure",
+      "forward_resolution_failure:1791743931148483987"
+    ],
+    [
+      4544,
+      "forward_api_failure",
+      "failure:1791743932147308820"
+    ],
+    [
+      4545,
+      "forward_resolution_failure",
+      "forward_resolution_failure:1791743932148829652"
+    ],
+    [
+      4546,
+      "forward_api_failure",
+      "failure:1791743933147321064"
+    ],
+    [
+      4547,
+      "weather_source_failure",
+      "weather_source_failure:1791743933148794377"
+    ],
+    [
+      4548,
+      "forward_api_failure",
+      "failure:1791743943147680409"
+    ],
+    [
+      4549,
+      "weather_source_failure",
+      "weather_source_failure:1791743943149144875"
+    ],
+    [
+      4550,
+      "cohort_exclusion",
+      "entry:PM-C1-FORWARD-003:kalshi:KXHIGHMIA-26OCT08"
+    ],
+    [
+      4551,
+      "cohort_exclusion",
+      "entry:PM-C1-FORWARD-003:kalshi:KXHIGHNY-26OCT08"
+    ],
+    [
+      4552,
+      "collector_heartbeat",
+      "heartbeat:1791743943158329808"
+    ],
+    [
+      4553,
+      "collector_heartbeat",
+      "heartbeat:1791743949140217281"
+    ],
+    [
+      4554,
+      "collector_heartbeat",
+      "heartbeat:1791743949147786535"
+    ],
+    [
+      4555,
+      "collector_heartbeat",
+      "heartbeat:1791743979140918600"
+    ],
+    [
+      4556,
+      "collector_heartbeat",
+      "heartbeat:1791743979149959563"
+    ],
+    [
+      4557,
+      "collector_heartbeat",
+      "heartbeat:1791743988273750327"
+    ]
+  ],
+  "forward_kind_counts": {
+    "cohort_definition": 3,
+    "cohort_exclusion": 10,
+    "cohort_representative": 18,
+    "cohort_retirement": 2,
+    "collector_heartbeat": 1173,
+    "collector_runtime_gap": 7,
+    "forward_api_failure": 33,
+    "forward_cadence_warning": 61,
+    "forward_coverage_gap": 30,
+    "forward_discovery_exclusion": 436,
+    "forward_integrity": 10,
+    "forward_metadata": 90,
+    "forward_resolution": 62,
+    "forward_resolution_failure": 10,
+    "forward_retrieval": 1362,
+    "forward_source_failure": 19,
+    "forward_universe": 31,
+    "market_snapshot": 841,
+    "microstructure_binance_feasibility": 1,
+    "microstructure_failure": 2,
+    "microstructure_summary": 1,
+    "recorder_manifest": 16,
+    "retrieval": 7,
+    "weather_contract": 70,
+    "weather_forecast": 232,
+    "weather_observation": 26,
+    "weather_source_failure": 4
+  },
+  "source_changes_vs_import": [
+    "src/pm_alpha/cli.py",
+    "src/pm_alpha/data/forward_http.py",
+    "src/pm_alpha/desktop.py",
+    "src/pm_alpha/desktop_ui/app.js",
+    "src/pm_alpha/desktop_ui/index.html",
+    "src/pm_alpha/desktop_ui/style.css",
+    "src/pm_alpha/execution.py",
+    "src/pm_alpha/recorder.py",
+    "tests/test_desktop.py"
+  ],
+  "unchanged_critical_components": [
+    "src/pm_alpha/cohort.py",
+    "src/pm_alpha/models.py",
+    "src/pm_alpha/costs.py",
+    "src/pm_alpha/risk.py",
+    "src/pm_alpha/forward_schema.py",
+    "src/pm_alpha/weather.py"
+  ],
+  "all_configuration_and_frozen_hashes_unchanged": true,
+  "forward_integrity": {
+    "valid": true,
+    "issues": [],
+    "raw_hashes_checked": 1141,
+    "snapshots_checked": 841,
+    "source_archives_checked": 15,
+    "live_trading": false
+  },
+  "raw_replay": {
+    "valid": true,
+    "books_replayed": 841,
+    "forecasts_replayed": 232,
+    "issues": []
+  },
+  "shadow_replay": {
+    "valid": true,
+    "issues": [],
+    "records_replayed": 2212,
+    "cash_balance": 0.0,
+    "available_cash": 0.0,
+    "open_positions": 0,
+    "pending_orders": 0,
+    "settlements": 0,
+    "realized_trading_pnl": 0.0,
+    "fees": 0.0,
+    "live_trading": false,
+    "real_orders": 0,
+    "evidence_type": "REAL_FORWARD_DATA"
+  },
+  "runtime": {
+    "cohort": {
+      "after_cost_expectancy": null,
+      "eligible_train": 0,
+      "excluded": 10,
+      "frozen_intact": true,
+      "id": "PM-C1-FORWARD-003",
+      "model_ready": false,
+      "nominations": 10,
+      "resolved_train": 0,
+      "test_opened": false,
+      "training_required": 200
+    },
+    "collector": {
+      "heartbeat_age_seconds": 2878.538697,
+      "heartbeat_fresh": false,
+      "last_book_age_seconds": 288635.100413,
+      "last_exit_code": null,
+      "lock_exists": false,
+      "owned_process_running": false,
+      "recorded_state": "STOPPED",
+      "state": "STOPPED",
+      "stop_requested": true
+    },
+    "counts": {
+      "books": 841,
+      "forecasts": 232,
+      "observations": 26,
+      "settlements": 62
+    },
+    "generated_at": "2026-10-11T19:27:46.820535+00:00",
+    "lead": {
+      "claim": "UNVERIFIED",
+      "shortcode": "DdTwFSqp3mS",
+      "status": "AWAITING_SOURCE_CONTENT"
+    },
+    "live_trading": false,
+    "markets": [],
+    "quality": {
+      "api_failures": 33,
+      "cadence_warnings": 61,
+      "integrity_rejections": 10,
+      "latest_api_failure": {
+        "attempt": 0,
+        "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+        "status": null,
+        "timestamp": "2026-10-11T18:39:03.147682+00:00",
+        "url": "https://api.weather.gov/points/40.7789,-73.9692"
+      },
+      "latest_cadence_warning": {
+        "market_id": null,
+        "reason": "Cycle required 103.58s versus 30s target; no catch-up burst",
+        "timestamp": "2026-10-08T11:17:41.784132+00:00"
+      },
+      "latest_rejection": {
+        "market_id": "KXBTC15M-26OCT080715-15",
+        "reason": "DataInvalid:Missing two-sided YES/NO depth",
+        "timestamp": "2026-10-08T11:14:28.591932+00:00"
+      },
+      "runtime_gaps": 7
+    },
+    "real_orders": 0,
+    "research": {
+      "account": {
+        "available_cash": 0.0,
+        "cash_balance": 0.0,
+        "committed_capital": 0.0,
+        "confirmed_deposited_funds": 0.0,
+        "due_contributions": [],
+        "fees": 0.0,
+        "fees_included_in_pnl": true,
+        "money_moved": false,
+        "open_positions": 0,
+        "other_income": 0.0,
+        "pending_committed_capital": 0.0,
+        "pending_orders": 0,
+        "plan": null,
+        "realized_trading_pnl": 0.0,
+        "scheduled_contribution": null,
+        "scheduled_total": 0.0,
+        "scheduled_unconfirmed": 0.0,
+        "settlements": 0,
+        "simulated": true,
+        "unit": "USD",
+        "unrealized_pnl": 0.0,
+        "withdrawals": 0.0
+      },
+      "audit_valid": true,
+      "cohort": {
+        "eligible_train": 0,
+        "locked_exclusion_reasons": {
+          "NO_VALID_BOOK_IN_FROZEN_OBSERVATION_WINDOW": 10
+        },
+        "pending_nominations": [],
+        "required_train": 200,
+        "resolved_train": 0,
+        "test_metrics": "WITHHELD",
+        "test_opened": false,
+        "validation_metrics": "WITHHELD"
+      },
+      "forecasts": [],
+      "last_calculated_at": "2026-10-11T19:27:43.614695+00:00",
+      "live_trading": false,
+      "opportunities": [],
+      "probability_support": [
+        "INSUFFICIENT_ELIGIBLE_RESOLVED_TRAIN",
+        "FROZEN_TRAIN_MODEL_UNAVAILABLE",
+        "HASH_BOUND_REVIEWED_AFTER_COST_POLICY_UNAVAILABLE"
+      ],
+      "real_orders": 0,
+      "state": "CURRENT",
+      "verdict": "NO QUALIFIED OPPORTUNITIES",
+      "worker": {
+        "last_cycle": "2026-10-11T19:27:43.614695+00:00",
+        "state": "RUNNING",
+        "verdict": "NO QUALIFIED OPPORTUNITIES"
+      }
+    },
+    "service_cost_usd": 0,
+    "streams": [
+      {
+        "id": "PM-C1",
+        "state": "WAITING_FOR_ELIGIBLE_TRAIN"
+      },
+      {
+        "id": "PM-W1",
+        "state": "SOURCE_BLOCKED"
+      },
+      {
+        "id": "PM-M1",
+        "state": "DEFERRED_DATA_LIMITATION"
+      }
+    ],
+    "verification": {
+      "state": "NOT_RUN_THIS_SESSION"
+    },
+    "verified_edge": "NONE"
+  },
+  "live_trading": false,
+  "real_orders": 0,
+  "incremental_spend_usd": 0
+}

@@ -1,0 +1,53 @@
+{
+  "ui_http_status": 200,
+  "api_http_status": 200,
+  "counts": {
+    "books": 811,
+    "forecasts": 232,
+    "observations": 26,
+    "settlements": 62
+  },
+  "collector": {
+    "heartbeat_age_seconds": 0.379005,
+    "heartbeat_fresh": true,
+    "last_book_age_seconds": 0.380116,
+    "last_exit_code": null,
+    "lock_exists": true,
+    "owned_process_running": false,
+    "recorded_state": "COLLECTING",
+    "state": "COLLECTING",
+    "stop_requested": false
+  },
+  "cohort": {
+    "after_cost_expectancy": null,
+    "eligible_train": 0,
+    "excluded": 8,
+    "frozen_intact": true,
+    "id": "PM-C1-FORWARD-003",
+    "model_ready": false,
+    "nominations": 10,
+    "resolved_train": 0,
+    "test_opened": false,
+    "training_required": 200
+  },
+  "verification": {
+    "completed_at": "2026-10-08T11:13:10.377136+00:00",
+    "consistent_database_snapshot": true,
+    "issues": [],
+    "live_trading": false,
+    "raw_hashes_checked": 1112,
+    "replay": {
+      "books_replayed": 810,
+      "forecasts_replayed": 232,
+      "issues": [],
+      "valid": true
+    },
+    "snapshots_checked": 810,
+    "source_archives_checked": 14,
+    "state": "PASS",
+    "valid": true
+  },
+  "public_binding": "127.0.0.1 only",
+  "orders": 0,
+  "live_trading": false
+}

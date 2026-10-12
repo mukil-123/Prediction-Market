@@ -1,0 +1,9 @@
+# Endpoint inventory; adapter hosts are pinned to these public official hosts.
+polymarket_gamma = "https://gamma-api.polymarket.com"
+polymarket_clob = "https://clob.polymarket.com"
+polymarket_data = "https://data-api.polymarket.com"
+kalshi_base = "https://external-api.kalshi.com/trade-api/v2"
+requests_per_second = 1.0
+timeout_seconds = 15
+# This is a validation sample, not a representative historical universe.
+sample_markets = 100

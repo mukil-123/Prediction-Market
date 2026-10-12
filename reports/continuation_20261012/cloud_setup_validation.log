@@ -1,0 +1,54 @@
+Consistent backups: /workspace/alpha-backups/setup-0eab1c5ad0e747d1940851d5e9ffad5c
+Ignoring colorama: markers 'sys_platform == "win32"' don't match your environment
+Requirement already satisfied: pytest==9.1.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-dev.lock (line 1)) (9.1.1)
+Requirement already satisfied: iniconfig==2.3.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-dev.lock (line 2)) (2.3.0)
+Requirement already satisfied: pluggy==1.6.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-dev.lock (line 3)) (1.6.0)
+Requirement already satisfied: packaging==26.3 in ./.venv/lib/python3.12/site-packages (from -r requirements-dev.lock (line 4)) (26.3)
+Requirement already satisfied: pygments==2.21.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-dev.lock (line 5)) (2.21.0)
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+{
+  "preflight": {
+    "frozen_sha256": "cc9f69d812d99b80d120c1e63a54287d85dc776bb0645c57f2e5899a5830e3d0",
+    "live_trading": false,
+    "audit_valid": true
+  },
+  "forward_integrity": {
+    "valid": true,
+    "issues": [],
+    "raw_hashes_checked": 1141,
+    "snapshots_checked": 841,
+    "source_archives_checked": 15,
+    "live_trading": false
+  },
+  "raw_replay": {
+    "valid": true,
+    "books_replayed": 841,
+    "forecasts_replayed": 232,
+    "issues": []
+  },
+  "shadow_replay": {
+    "valid": true,
+    "issues": [],
+    "records_replayed": 2210,
+    "cash_balance": 0.0,
+    "available_cash": 0.0,
+    "open_positions": 0,
+    "pending_orders": 0,
+    "settlements": 0,
+    "realized_trading_pnl": 0.0,
+    "fees": 0.0,
+    "live_trading": false,
+    "real_orders": 0,
+    "evidence_type": "REAL_FORWARD_DATA"
+  },
+  "valid": true,
+  "live_trading": false,
+  "real_orders": 0
+}
+........................................................................ [ 30%]
+........................................................................ [ 60%]
+.....................................s.................................. [ 90%]
+........................                                                 [100%]
+239 passed, 1 skipped in 6.65s

@@ -1,0 +1,9 @@
+{
+  "tests_passed": 88,
+  "real_sample_snapshots": 7,
+  "valid_trades": 0,
+  "deterministic_json_and_svg": true,
+  "audit_chains_valid": true,
+  "live_trading": false,
+  "paid_spend_usd": 0
+}

@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-10-11T19:21:11.398Z",
+  "real": {
+    "counts": {
+      "books": 841,
+      "forecasts": 232,
+      "observations": 26,
+      "settlements": 62
+    },
+    "collector": {
+      "heartbeat_age_seconds": 2481.971322,
+      "heartbeat_fresh": false,
+      "last_book_age_seconds": 288238.533038,
+      "last_exit_code": null,
+      "lock_exists": false,
+      "owned_process_running": false,
+      "recorded_state": "STOPPED",
+      "state": "STOPPED",
+      "stop_requested": true
+    },
+    "research_worker": {
+      "last_cycle": "2026-10-11T19:21:03.543592+00:00",
+      "state": "RUNNING",
+      "verdict": "NO QUALIFIED OPPORTUNITIES"
+    },
+    "verdict": "NO QUALIFIED OPPORTUNITIES",
+    "verification": "PASS",
+    "funding": 0
+  },
+  "fixture": {
+    "evidence_type": "SYNTHETIC_UI_TEST_ONLY",
+    "scheduled_available_cash_before_confirmation": 0,
+    "confirmed_available_cash": 25,
+    "realized_trading_pnl": 0,
+    "confirmation_persists_after_reload": true,
+    "repeated_plan_save_does_not_duplicate_funding": true,
+    "mobile_width": 390
+  },
+  "javascript_errors": [],
+  "live_trading": false,
+  "real_orders": 0
+}

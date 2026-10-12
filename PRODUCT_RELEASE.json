@@ -1,0 +1,77 @@
+{
+  "product": "Prediction Market Alpha research desktop",
+  "version": "0.1.1",
+  "release_date": "2026-10-08",
+  "status": "LOCAL_RESEARCH_PRODUCT_READY",
+  "launch": "START_RESEARCH.cmd",
+  "runtime": "Python 3.11+ standard library + SQLite; free IANA timezone data required",
+  "local_url": "http://127.0.0.1:8765",
+  "live_trading": false,
+  "real_orders": 0,
+  "verified_edge": "NONE",
+  "incremental_spend_usd": 0,
+  "tests": {
+    "passed": 207,
+    "skipped": 1,
+    "skip_reason": "Historical real validation sample absent from checkpoint",
+    "windows_host_run": false
+  },
+  "counts": {
+    "books": 841,
+    "forecasts": 232,
+    "observations": 26,
+    "settlements": 62
+  },
+  "cohort": {
+    "id": "PM-C1-FORWARD-003",
+    "frozen_intact": true,
+    "nominations": 10,
+    "eligible_train": 0,
+    "resolved_train": 0,
+    "training_required": 200,
+    "excluded": 8,
+    "test_opened": false,
+    "model_ready": false,
+    "after_cost_expectancy": null
+  },
+  "verification": {
+    "state": "PASS",
+    "completed_at": "2026-10-08T11:19:05.193797+00:00",
+    "consistent_database_snapshot": true,
+    "valid": true,
+    "issues": [],
+    "raw_hashes_checked": 1141,
+    "snapshots_checked": 841,
+    "source_archives_checked": 14,
+    "live_trading": false,
+    "replay": {
+      "valid": true,
+      "books_replayed": 841,
+      "forecasts_replayed": 232,
+      "issues": []
+    }
+  },
+  "collector_state_at_release": "STOPPED_CLEANLY",
+  "frozen_sha256": "cc9f69d812d99b80d120c1e63a54287d85dc776bb0645c57f2e5899a5830e3d0",
+  "unchanged_strategy_components": [
+    "recorder.py",
+    "cohort.py",
+    "weather.py",
+    "forward_schema.py",
+    "forward_reports.py",
+    "risk.py",
+    "costs.py",
+    "execution.py",
+    "models.py",
+    "all configuration files",
+    "all frozen cohort files"
+  ],
+  "source_change_scope": [
+    "desktop runtime and original UI",
+    "CLI desktop command",
+    "read-only verifier constructor injection; default unchanged",
+    "package version/UI asset inclusion",
+    "Windows launcher",
+    "documentation/test/release artifacts"
+  ]
+}

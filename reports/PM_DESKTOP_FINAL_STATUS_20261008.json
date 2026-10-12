@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-10-08T11:19:05.200999+00:00",
+  "live_trading": false,
+  "real_orders": 0,
+  "verified_edge": "NONE",
+  "service_cost_usd": 0,
+  "counts": {
+    "books": 841,
+    "forecasts": 232,
+    "observations": 26,
+    "settlements": 62
+  },
+  "collector": {
+    "state": "STOPPED",
+    "recorded_state": "STOPPED",
+    "owned_process_running": false,
+    "heartbeat_fresh": true,
+    "heartbeat_age_seconds": 83.351313,
+    "last_book_age_seconds": 113.483045,
+    "lock_exists": false,
+    "stop_requested": true,
+    "last_exit_code": null
+  },
+  "cohort": {
+    "id": "PM-C1-FORWARD-003",
+    "frozen_intact": true,
+    "nominations": 10,
+    "eligible_train": 0,
+    "resolved_train": 0,
+    "training_required": 200,
+    "excluded": 8,
+    "test_opened": false,
+    "model_ready": false,
+    "after_cost_expectancy": null
+  },
+  "streams": [
+    {
+      "id": "PM-C1",
+      "state": "WAITING_FOR_ELIGIBLE_TRAIN"
+    },
+    {
+      "id": "PM-W1",
+      "state": "SOURCE_BLOCKED"
+    },
+    {
+      "id": "PM-M1",
+      "state": "DEFERRED_DATA_LIMITATION"
+    }
+  ],
+  "markets": [
+    {
+      "platform": "kalshi",
+      "market_id": "KXHIGHMIA-26OCT08-B91.5",
+      "capture_time": "2026-10-08T11:17:11.712016+00:00",
+      "yes_bid": 0.32,
+      "yes_ask": 0.35,
+      "no_bid": 0.65,
+      "no_ask": 0.68,
+      "spread": 0.02999999999999997,
+      "execution_validity": "VISIBLE_DEPTH_ONLY_COST_BOUND"
+    },
+    {
+      "platform": "kalshi",
+      "market_id": "KXHIGHNY-26OCT08-B72.5",
+      "capture_time": "2026-10-08T11:16:07.759829+00:00",
+      "yes_bid": 0.25,
+      "yes_ask": 0.26,
+      "no_bid": 0.74,
+      "no_ask": 0.75,
+      "spread": 0.010000000000000009,
+      "execution_validity": "VISIBLE_DEPTH_ONLY_COST_BOUND"
+    },
+    {
+      "platform": "kalshi",
+      "market_id": "KXHIGHMIA-26OCT08-B85.5",
+      "capture_time": "2026-10-08T11:16:01.977408+00:00",
+      "yes_bid": 0.02,
+      "yes_ask": 0.03,
+      "no_bid": 0.97,
+      "no_ask": 0.98,
+      "spread": 0.009999999999999998,
+      "execution_validity": "VISIBLE_DEPTH_ONLY_COST_BOUND"
+    },
+    {
+      "platform": "kalshi",
+      "market_id": "KXHIGHNY-26OCT08-T72",
+      "capture_time": "2026-10-08T11:15:58.101687+00:00",
+      "yes_bid": 0.04,
+      "yes_ask": 0.05,
+      "no_bid": 0.95,
+      "no_ask": 0.96,
+      "spread": 0.010000000000000002,
+      "execution_validity": "VISIBLE_DEPTH_ONLY_COST_BOUND"
+    },
+    {
+      "platform": "kalshi",
+      "market_id": "KXHIGHNY-26OCT08-B76.5",
+      "capture_time": "2026-10-08T11:15:49.417448+00:00",
+      "yes_bid": 0.14,
+      "yes_ask": 0.15,
+      "no_bid": 0.85,
+      "no_ask": 0.86,
+      "spread": 0.009999999999999981,
+      "execution_validity": "VISIBLE_DEPTH_ONLY_COST_BOUND"
+    },
+    {
+      "platform": "kalshi",
+      "market_id": "KXHIGHMIA-26OCT08-B89.5",
+      "capture_time": "2026-10-08T11:15:44.785472+00:00",
+      "yes_bid": 0.49,
+      "yes_ask": 0.51,
+      "no_bid": 0.49,
+      "no_ask": 0.51,
+      "spread": 0.020000000000000018,
+      "execution_validity": "VISIBLE_DEPTH_ONLY_COST_BOUND"
+    },
+    {
+      "platform": "kalshi",
+      "market_id": "KXHIGHNY-26OCT08-B74.5",
+      "capture_time": "2026-10-08T11:15:40.087412+00:00",
+      "yes_bid": 0.57,
+      "yes_ask": 0.59,
+      "no_bid": 0.41,
+      "no_ask": 0.43,
+      "spread": 0.020000000000000018,
+      "execution_validity": "VISIBLE_DEPTH_ONLY_COST_BOUND"
+    },
+    {
+      "platform": "kalshi",
+      "market_id": "KXHIGHMIA-26OCT08-B87.5",
+      "capture_time": "2026-10-08T11:15:34.423767+00:00",
+      "yes_bid": 0.13,
+      "yes_ask": 0.16,
+      "no_bid": 0.84,
+      "no_ask": 0.87,
+      "spread": 0.03,
+      "execution_validity": "VISIBLE_DEPTH_ONLY_COST_BOUND"
+    }
+  ],
+  "quality": {
+    "integrity_rejections": 10,
+    "api_failures": 17,
+    "cadence_warnings": 61,
+    "runtime_gaps": 7,
+    "latest_rejection": {
+      "market_id": "KXBTC15M-26OCT080715-15",
+      "reason": "DataInvalid:Missing two-sided YES/NO depth",
+      "timestamp": "2026-10-08T11:14:28.591932+00:00"
+    },
+    "latest_cadence_warning": {
+      "market_id": null,
+      "reason": "Cycle required 103.58s versus 30s target; no catch-up burst",
+      "timestamp": "2026-10-08T11:17:41.784132+00:00"
+    }
+  },
+  "verification": {
+    "state": "PASS",
+    "completed_at": "2026-10-08T11:19:05.193797+00:00",
+    "consistent_database_snapshot": true,
+    "valid": true,
+    "issues": [],
+    "raw_hashes_checked": 1141,
+    "snapshots_checked": 841,
+    "source_archives_checked": 14,
+    "live_trading": false,
+    "replay": {
+      "valid": true,
+      "books_replayed": 841,
+      "forecasts_replayed": 232,
+      "issues": []
+    }
+  },
+  "lead": {
+    "shortcode": "DdTwFSqp3mS",
+    "status": "AWAITING_SOURCE_CONTENT",
+    "claim": "UNVERIFIED"
+  }
+}

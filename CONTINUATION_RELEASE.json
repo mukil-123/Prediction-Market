@@ -1,0 +1,111 @@
+{
+  "product": "Prediction Market Alpha \u2014 continued research/shadow workflow",
+  "edition": "20261012-shadow-orchestration-001",
+  "exported_at_utc": "2026-10-11T19:31:36.086275+00:00",
+  "status": "WORKING_SHADOW_WORKFLOW_DATA_GATED",
+  "source_commit": null,
+  "source_provenance": "Transferred filesystem, preserved history bundle and original manifests; current changes identified by source/file hashes",
+  "launch": {
+    "windows": "START_RESEARCH.cmd",
+    "linux_macos": "START_RESEARCH.sh"
+  },
+  "runtime": "Python 3.11+ standard library + SQLite; IANA timezone data",
+  "tests": {
+    "passed": 239,
+    "skipped": 1,
+    "skip_reason": "Missing historical real validation dataset",
+    "windows_host_run": false
+  },
+  "counts": {
+    "books": 841,
+    "forecasts": 232,
+    "observations": 26,
+    "settlements": 62
+  },
+  "cohort": {
+    "after_cost_expectancy": null,
+    "eligible_train": 0,
+    "excluded": 10,
+    "frozen_intact": true,
+    "id": "PM-C1-FORWARD-003",
+    "model_ready": false,
+    "nominations": 10,
+    "resolved_train": 0,
+    "test_opened": false,
+    "training_required": 200
+  },
+  "verification": {
+    "completed_at": "2026-10-11T19:28:33.241939+00:00",
+    "consistent_database_snapshot": true,
+    "issues": [],
+    "live_trading": false,
+    "raw_hashes_checked": 1141,
+    "replay": {
+      "books_replayed": 841,
+      "forecasts_replayed": 232,
+      "issues": [],
+      "valid": true
+    },
+    "snapshots_checked": 841,
+    "source_archives_checked": 15,
+    "state": "PASS",
+    "valid": true
+  },
+  "real_account": {
+    "available_cash": 0.0,
+    "cash_balance": 0.0,
+    "committed_capital": 0.0,
+    "confirmed_deposited_funds": 0.0,
+    "due_contributions": [],
+    "fees": 0.0,
+    "fees_included_in_pnl": true,
+    "money_moved": false,
+    "open_positions": 0,
+    "other_income": 0.0,
+    "pending_committed_capital": 0.0,
+    "pending_orders": 0,
+    "plan": null,
+    "realized_trading_pnl": 0.0,
+    "scheduled_contribution": null,
+    "scheduled_total": 0.0,
+    "scheduled_unconfirmed": 0.0,
+    "settlements": 0,
+    "simulated": true,
+    "unit": "USD",
+    "unrealized_pnl": 0.0,
+    "withdrawals": 0.0
+  },
+  "verdict": "NO QUALIFIED OPPORTUNITIES",
+  "cloud_process_state_at_export": {
+    "worker": {
+      "last_cycle": "2026-10-11T19:31:14.363836+00:00",
+      "state": "RUNNING",
+      "verdict": "NO QUALIFIED OPPORTUNITIES"
+    },
+    "collector": {
+      "heartbeat_age_seconds": 3107.778967,
+      "heartbeat_fresh": false,
+      "last_book_age_seconds": 288864.340683,
+      "last_exit_code": null,
+      "lock_exists": false,
+      "owned_process_running": false,
+      "recorded_state": "STOPPED",
+      "state": "STOPPED",
+      "stop_requested": true
+    },
+    "mode": "research-loop --no-collect",
+    "permanent_uptime": false,
+    "processes_in_zip": false
+  },
+  "network": "Public GET and official-doc access proxy CONNECT403; allow-list draft saved, not applied; review/save and Publish required",
+  "synthetic_demonstration": "reports/continuation_20261012/technical-demo-verified/TECHNICAL_DEMONSTRATION.json",
+  "demonstration_is_strategy_evidence": false,
+  "frozen_sha256": "cc9f69d812d99b80d120c1e63a54287d85dc776bb0645c57f2e5899a5830e3d0",
+  "live_trading": false,
+  "real_orders": 0,
+  "incremental_spend_usd": 0,
+  "verified_edge": "NONE",
+  "cloud_config_draft_saved": true,
+  "cloud_config_applied": false,
+  "fresh_task_restoration_verified": false
+}

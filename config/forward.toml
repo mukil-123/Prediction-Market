@@ -1,0 +1,30 @@
+[collector]
+poll_seconds = 30
+discovery_seconds = 300
+resolution_seconds = 300
+timeout_seconds = 15
+max_markets = 12
+listing_limit = 40
+max_disk_mb = 2048
+
+[universe]
+kalshi_series = ["KXHIGHMIA", "KXHIGHNY", "KXLOWNYC", "KXBTC15M"]
+polymarket_enabled = true
+
+[weather]
+enabled = true
+poll_seconds = 900
+
+[[weather.locations]]
+name = "Miami airport reference"
+latitude = 25.7959
+longitude = -80.2870
+station = "KMIA"
+timezone = "America/New_York"
+
+[[weather.locations]]
+name = "New York Central Park reference"
+latitude = 40.7789
+longitude = -73.9692
+station = "KNYC"
+timezone = "America/New_York"

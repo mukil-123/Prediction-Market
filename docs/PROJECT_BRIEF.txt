@@ -1,0 +1,1101 @@
+You are the lead quantitative researcher and software engineer for a new project:
+
+# PREDICTION-MARKET ALPHA SYSTEM
+
+Your job is to build a rigorous, fully reproducible prediction-market research and trading system whose purpose is to discover whether genuine, scalable, after-cost trading edge exists.
+
+This is NOT a task to copy viral social-media profit claims.
+
+The system must independently test whether the underlying ideas work.
+
+The long-term objective is to create a legitimate additional income engine that can begin with very small personal capital and scale only after statistically credible edge has been demonstrated.
+
+The project must initially cost $0 to build and operate.
+
+---
+
+# 1. NON-NEGOTIABLE COST CONSTRAINT
+
+The initial research stack must use:
+
+- open-source software
+- local computation
+- free public APIs
+- freely available datasets
+- free API tiers where genuinely sufficient
+- free market APIs
+- local SQLite/DuckDB/PostgreSQL where appropriate
+- local scheduled jobs where possible
+
+DO NOT require:
+
+- Grok paid subscription
+- Jev paid subscription
+- OpenAI paid API
+- Anthropic paid API
+- paid financial datasets
+- paid weather datasets
+- paid VPS
+- paid databases
+- paid proxies
+- paid scraping services
+- paid monitoring systems
+- paid backtesting platforms
+
+If a useful paid service exists, document it only as an OPTIONAL future upgrade.
+
+The baseline system must function without it.
+
+Never silently introduce something that costs money.
+
+Maintain:
+
+`docs/COST_LEDGER.md`
+
+It must list every dependency/service and show:
+
+- name
+- purpose
+- current cost
+- free-tier limitations
+- whether optional
+- replacement if free access disappears
+
+Target initial operating cost:
+
+`$0/month`
+
+---
+
+# 2. CORE PRINCIPLE
+
+An AI model is NOT considered an edge.
+
+Grok, Jev, LLMs, sentiment agents, news agents and other AI systems are only potential input components.
+
+The system must determine whether they provide incremental predictive value.
+
+The fundamental trading problem is:
+
+`external information`
+→ `estimate true probability`
+→ `compare against market-implied probability`
+→ `calculate uncertainty`
+→ `subtract trading costs`
+→ `trade only if expected value remains positive`
+
+Formally:
+
+`raw_edge = model_probability - executable_market_probability`
+
+but a trade must require:
+
+`net_edge = raw_edge - costs - uncertainty_buffer`
+
+and:
+
+`net_edge > minimum_required_edge`
+
+Do not optimize solely for historical P&L.
+
+---
+
+# 3. FIRST TARGET MARKET
+
+Begin with prediction markets accessible through public APIs, initially investigating Polymarket or another suitable prediction market with sufficient historical and order-book data.
+
+Before integrating any platform:
+
+1. inspect its CURRENT official API documentation;
+2. document endpoints;
+3. document rate limits;
+4. document authentication requirements;
+5. document historical-data availability;
+6. document fees;
+7. document order types;
+8. document geographic/platform restrictions relevant to eventual live deployment;
+9. do not attempt to bypass geographic restrictions;
+10. do not use VPN/proxy circumvention.
+
+Paper research must remain possible even if live trading is unavailable.
+
+---
+
+# 4. PROJECT PHILOSOPHY
+
+This project follows the same research discipline as a professional quantitative trading system.
+
+Every strategy must progress through:
+
+`idea`
+→ `formal hypothesis`
+→ `data feasibility`
+→ `pre-registered rules`
+→ `historical backtest`
+→ `validation`
+→ `untouched out-of-sample`
+→ `walk-forward`
+→ `Monte Carlo`
+→ `live shadow mode`
+→ `tiny-capital live test`
+→ `scale or retire`
+
+A strategy that fails must be retired.
+
+Do not manipulate rules until the backtest becomes profitable.
+
+Do not cherry-pick favorable periods.
+
+Do not fabricate unavailable data.
+
+Do not silently substitute proxy data.
+
+---
+
+# 5. INITIAL STRATEGY FAMILIES
+
+Build the framework so each strategy is an independent module.
+
+Initially research these four branches.
+
+## PM-W1 — Weather / objective-data mispricing
+
+Research prediction markets whose outcome can be modeled from objective meteorological information.
+
+Potential sources:
+
+- NOAA
+- NWS
+- weather observations
+- historical weather
+- ensemble forecasts where freely available
+- storm/hurricane data
+- precipitation forecasts
+- temperature forecasts
+
+Hypothesis:
+
+prediction-market probabilities may sometimes differ materially from probabilities derived from objective weather data.
+
+Important:
+
+Forecast data must be timestamped.
+
+Never use revised forecasts that became available after the hypothetical trade.
+
+Research:
+
+- forecast calibration
+- forecast errors by horizon
+- station-specific error
+- market reaction delay
+- spread/liquidity
+- resolution source compatibility
+
+---
+
+## PM-C1 — Probability calibration / favorite-longshot effects
+
+Study whether prediction-market quoted probabilities are systematically miscalibrated.
+
+For historical contracts, analyze buckets such as:
+
+0–5%
+5–10%
+10–15%
+...
+90–95%
+95–100%
+
+Compare:
+
+`market implied probability`
+
+against:
+
+`actual empirical resolution rate`
+
+Test:
+
+- calibration curves
+- isotonic calibration
+- Platt/logistic calibration
+- Bayesian calibration
+- logit transforms
+- extreme probability behavior
+- contract category
+- liquidity
+- time to resolution
+
+Do NOT blindly copy coefficients from viral bots or GitHub repositories.
+
+Estimate all parameters independently.
+
+---
+
+## PM-S1 — Structured-event models
+
+Find prediction markets where objective structured external data can generate an independent probability estimate.
+
+Candidate categories may include:
+
+- macroeconomic releases
+- interest-rate decisions
+- inflation
+- scheduled economic data
+- crypto price thresholds
+- sports where legal/platform appropriate
+- other objectively resolved quantitative events
+
+Avoid vague events where outcome interpretation is difficult.
+
+Priority goes to markets where:
+
+- resolution criteria are explicit;
+- historical data exists;
+- external predictors are timestamped;
+- many historical observations are available.
+
+---
+
+## PM-M1 — Market microstructure / stale prices
+
+Investigate whether prediction contracts react slowly to information observable in faster underlying markets.
+
+Examples:
+
+- crypto spot/perpetual prices versus short-horizon prediction contracts
+- related prediction contracts with inconsistent pricing
+- mutually exclusive contracts
+- logically constrained contract sets
+
+Measure:
+
+- reaction lag
+- spread
+- depth
+- fill probability
+- slippage
+- adverse selection
+- API latency
+
+Do NOT assume theoretical arbitrage is executable.
+
+Profitability must use executable bid/ask prices.
+
+---
+
+# 6. FUTURE AI BRANCH
+
+Create a placeholder:
+
+`PM-A1`
+
+for AI/LLM/Jev/Grok-style probability estimation.
+
+DO NOT make it a dependency of the baseline system.
+
+First establish whether objective/statistical strategies work.
+
+Later, AI forecasts may be tested against the exact same market dataset.
+
+An AI system survives only if it produces measurable incremental improvement in:
+
+- Brier score
+- log loss
+- calibration
+- after-cost trading expectancy
+
+compared with simpler baselines.
+
+---
+
+# 7. ARCHITECTURE
+
+Use a modular architecture approximately like:
+
+`Market Data`
+→ `External Data`
+→ `Normalized Event Store`
+→ `Feature Engine`
+→ `Probability Models`
+→ `Strategy Engine`
+→ `Uncertainty Engine`
+→ `Cost Model`
+→ `Risk Engine`
+→ `Portfolio Engine`
+→ `Paper OMS`
+→ `Optional Live Adapter`
+→ `Audit Database`
+→ `Monitoring`
+→ `Research Reports`
+
+Keep these components separated.
+
+Suggested repository structure:
+
+prediction-market-alpha/
+    README.md
+    AGENTS.md
+    pyproject.toml
+    .env.example
+    .gitignore
+
+    config/
+        research.yaml
+        risk.yaml
+        markets.yaml
+
+    src/
+        data/
+            market/
+            weather/
+            macro/
+            crypto/
+
+        features/
+
+        models/
+            calibration/
+            weather/
+            structured/
+            ai/
+
+        strategies/
+            pm_w1/
+            pm_c1/
+            pm_s1/
+            pm_m1/
+            pm_a1/
+
+        execution/
+            paper/
+            adapters/
+
+        risk/
+
+        portfolio/
+
+        backtest/
+
+        validation/
+
+        monitoring/
+
+        storage/
+
+        utils/
+
+    tests/
+        unit/
+        integration/
+        regression/
+
+    scripts/
+
+    data/
+        raw/
+        processed/
+        cache/
+
+    reports/
+
+    notebooks/
+
+    docs/
+        ARCHITECTURE.md
+        DATA_SOURCES.md
+        COST_LEDGER.md
+        RESEARCH_RULES.md
+        RISK_POLICY.md
+        STRATEGY_REGISTRY.md
+        LIVE_DEPLOYMENT_CHECKLIST.md
+
+Do not treat this exact tree as mandatory if a better architecture is justified.
+
+---
+
+# 8. DATA INTEGRITY
+
+This is critical.
+
+Every historical feature must have:
+
+`event_time`
+`available_time`
+`ingested_time`
+
+A backtest can use information only when:
+
+`available_time <= simulated_entry_time`
+
+Prevent look-ahead bias programmatically.
+
+Add tests specifically designed to detect future-data leakage.
+
+If historical timestamps are unavailable or unreliable, mark the affected strategy:
+
+`DATA_INVALID`
+
+rather than guessing.
+
+Maintain dataset provenance.
+
+For every dataset document:
+
+- source
+- endpoint/URL
+- retrieval date
+- timestamp semantics
+- timezone
+- expected update frequency
+- missing-data handling
+- revision behavior
+- known limitations
+
+---
+
+# 9. MARKET PRICES
+
+Never backtest using only a displayed "probability" if executable prices are available.
+
+Prefer:
+
+- bid
+- ask
+- order-book depth
+- volume
+- timestamp
+
+For YES buys use realistic executable ask.
+
+For sales use realistic executable bid.
+
+Model:
+
+- fees
+- spread
+- slippage
+- incomplete fills
+- order-size capacity
+
+If exact historical order-book data is unavailable, explicitly distinguish:
+
+`IDEALIZED_BACKTEST`
+
+from:
+
+`EXECUTION_REALISTIC_BACKTEST`
+
+Never present idealized performance as tradable performance.
+
+---
+
+# 10. PROBABILITY EVALUATION
+
+Every probability model must be evaluated independently from trading P&L.
+
+Mandatory metrics:
+
+- Brier score
+- log loss
+- calibration error
+- calibration plot
+- reliability curve
+- sharpness
+- discrimination where appropriate
+
+Baseline #1:
+
+`prediction = market probability`
+
+Baseline #2:
+
+simple historical calibration model.
+
+A complex model must outperform meaningful baselines out-of-sample.
+
+---
+
+# 11. TRADING EXPECTANCY
+
+For binary YES contracts bought at price `p` with estimated true probability `q`:
+
+gross expected value per $1 payout contract should be derived explicitly.
+
+Do not use vague "edge %" terminology without defining it.
+
+Report:
+
+- forecast probability
+- executable entry price
+- expected payoff
+- fees
+- expected slippage
+- resulting expected value
+- expected return on capital at risk
+
+All equations must be documented.
+
+---
+
+# 12. RISK POLICY
+
+The viral bots used aggressive Kelly sizing.
+
+Do NOT copy this.
+
+Initial research risk policy:
+
+Normal maximum loss per independent position:
+
+`0.25% of bankroll`
+
+Absolute hard ceiling:
+
+`0.50% of bankroll`
+
+Maximum correlated event-cluster worst-case exposure:
+
+`1.00% of bankroll`
+
+These are starting research constraints, not optimized values.
+
+Use fractional Kelly only if desired sizing is LOWER than hard caps.
+
+Actual position risk:
+
+`min(fractional_kelly_size, strategy_cap, portfolio_cap, liquidity_cap)`
+
+Never:
+
+- martingale
+- grid
+- double after loss
+- chase losses
+- remove stop/risk limits because AI requests it
+- allow an agent to edit its own hard risk parameters
+
+Risk limits must be deterministic code.
+
+AI never has final authority over risk.
+
+---
+
+# 13. BANKROLL SURVIVAL
+
+Because the intended starting bankroll may be small, survival is more important than maximizing theoretical growth.
+
+Measure:
+
+- probability of 10% drawdown
+- probability of 20% drawdown
+- probability of 30% drawdown
+- expected maximum drawdown
+- longest losing streak
+- 95% expected shortfall
+- risk of ruin
+- recovery time
+- volatility of returns
+
+Use at least:
+
+`10,000 Monte Carlo paths`
+
+for promoted strategies.
+
+---
+
+# 14. RESEARCH SPLITS
+
+Never evaluate final performance on the same sample used to design the strategy.
+
+Use:
+
+- TRAIN
+- VALIDATION
+- TEST
+
+The TEST set must remain untouched until strategy rules are frozen.
+
+After that use walk-forward analysis.
+
+Track every strategy version.
+
+Example:
+
+`PM-W1-v0.1`
+`PM-W1-v0.2`
+
+Changing a threshold after seeing test performance creates a new strategy version.
+
+---
+
+# 15. MULTIPLE-TESTING CONTROL
+
+We are likely to test many strategies.
+
+Therefore track:
+
+- number of hypotheses tested
+- number of parameter variants
+- number of filters tried
+- number of markets/categories examined
+
+Use appropriate controls such as:
+
+- false discovery rate
+- deflated Sharpe where relevant
+- probability of backtest overfitting
+- bootstrap confidence intervals
+
+Do not call a strategy successful merely because one variation produced p < 0.05.
+
+---
+
+# 16. ACCEPTANCE GATES
+
+Create explicit strategy states:
+
+IDEA
+DATA_CHECK
+BACKTEST
+VALIDATION
+OOS
+SHADOW
+LIVE_SMALL
+PROMOTED
+RETIRED
+
+A strategy can progress only if predefined gates are passed.
+
+At minimum, promotion should require:
+
+1. valid timestamped data;
+2. positive net expectancy after realistic costs;
+3. superior probability forecasting to relevant baseline where applicable;
+4. acceptable drawdown;
+5. robustness across time;
+6. robustness across parameter perturbations;
+7. acceptable Monte Carlo survival;
+8. untouched OOS profitability;
+9. forward shadow performance reasonably consistent with historical estimates.
+
+Do not invent numerical gates merely to pass candidates.
+
+Research them and document proposed thresholds before examining final OOS results.
+
+---
+
+# 17. SHADOW TRADING
+
+Implement a live paper/shadow engine before any live execution.
+
+Every decision must be stored BEFORE the event resolves.
+
+Record:
+
+- timestamp
+- market ID
+- market question
+- resolution rules
+- bid
+- ask
+- market probability
+- model probability
+- uncertainty interval
+- estimated edge
+- expected costs
+- decision
+- intended size
+- maximum acceptable entry
+- strategy version
+- model version
+- input-data hashes
+- eventual resolution
+- hypothetical P&L
+
+Records must be append-only.
+
+Do not allow losing signals to be deleted.
+
+Generate a daily report.
+
+---
+
+# 18. LIVE EXECUTION
+
+Do NOT implement live-money execution in the first milestone.
+
+The first production system is:
+
+`research + backtesting + shadow trading`
+
+Design an interface for future execution adapters, but default:
+
+`LIVE_TRADING = false`
+
+Any future live mode must require an explicit configuration change.
+
+Never store wallet secrets in source control.
+
+---
+
+# 19. TESTING
+
+Implement automated tests for:
+
+- probability math
+- payout math
+- risk sizing
+- Kelly calculations
+- cost calculations
+- timestamp leakage
+- market parsing
+- data normalization
+- backtest determinism
+- portfolio exposure
+- correlation grouping
+- paper execution
+- database writes
+
+Tests must run locally with one command.
+
+Target:
+
+`pytest`
+
+or an equivalent simple command.
+
+---
+
+# 20. REPRODUCIBILITY
+
+Every backtest must save:
+
+- git commit
+- strategy version
+- config
+- dataset version/hash
+- start/end dates
+- number of markets
+- number of trades
+- assumptions
+- cost model
+- seed
+- results
+
+Running the same configuration against the same data should produce identical output.
+
+---
+
+# 21. REPORTING
+
+Reports must be human-readable.
+
+Do not leave results only in console logs.
+
+Every experiment should generate something like:
+
+`reports/PM_W1_v001.md`
+
+containing:
+
+## Hypothesis
+
+## Data
+
+## Exact strategy rules
+
+## Entry rules
+
+## Position sizing
+
+## Costs
+
+## Sample size
+
+## Calibration
+
+## Gross results
+
+## Net results
+
+## Drawdown
+
+## Monte Carlo
+
+## Train results
+
+## Validation results
+
+## OOS results
+
+## Failure analysis
+
+## Robustness tests
+
+## Known limitations
+
+## Verdict
+
+Verdict must be one of:
+
+PROMOTE
+CONTINUE_RESEARCH
+RETEST_WITH_BETTER_DATA
+RETIRED
+
+Never hide failed strategies.
+
+---
+
+# 22. MASTER STRATEGY REGISTRY
+
+Maintain:
+
+`docs/STRATEGY_REGISTRY.md`
+
+For every candidate store:
+
+| ID | Family | Hypothesis | Version | Status | Trades | Net EV | OOS | Reason |
+
+This prevents repeatedly rediscovering failed ideas.
+
+---
+
+# 23. VIRAL BOT RECONSTRUCTION
+
+Create:
+
+`docs/VIRAL_BOT_CLAIMS.md`
+
+Document the two social-media bot concepts that motivated this research.
+
+Separate:
+
+- claimed results
+- verifiable architecture
+- assumptions
+- publicly available code
+- unsupported claims
+- components worth testing
+
+Do NOT insert claimed viral profits into our performance history.
+
+Treat them only as research leads.
+
+---
+
+# 24. FIRST MILESTONE
+
+Do NOT attempt to build everything at once.
+
+Milestone 1 should deliver:
+
+1. working repository;
+2. architecture;
+3. dependency setup;
+4. market API research;
+5. market downloader;
+6. normalized market schema;
+7. local database;
+8. resolved-market dataset;
+9. baseline probability calibration analysis;
+10. first PM-C1 backtest;
+11. unit tests;
+12. readable report;
+13. zero-dollar cost ledger.
+
+The first substantive research question should be:
+
+"Are quoted prediction-market probabilities historically calibrated well enough that a systematic calibration transformation produces positive after-cost expectancy?"
+
+This gives us a clean baseline before introducing AI.
+
+---
+
+# 25. SECOND MILESTONE
+
+After PM-C1 infrastructure works:
+
+begin PM-W1.
+
+Build:
+
+- weather-market detector
+- resolution-source parser
+- free weather-data adapter
+- timestamp-safe historical forecast storage
+- probability model
+- historical validation
+- cost-aware backtest
+
+Do not proceed if usable historical forecast data cannot be reconstructed without look-ahead.
+
+---
+
+# 26. DEVELOPMENT ENVIRONMENT
+
+The user's main development environment is Windows.
+
+Make commands PowerShell-friendly.
+
+Prefer Python for quantitative research unless another language has a strong technical justification.
+
+Keep setup simple.
+
+A new developer should ideally be able to run something resembling:
+
+`git clone`
+`python -m venv .venv`
+`pip install -e .`
+`pytest`
+`python -m ...`
+
+Document exact commands.
+
+Avoid unnecessary infrastructure.
+
+---
+
+# 27. AGENTS.md
+
+Create a compact `AGENTS.md`.
+
+It should explain only facts future coding agents would otherwise likely miss:
+
+- project purpose
+- zero-cost requirement
+- no fabricated data
+- no look-ahead
+- paper trading default
+- risk limits
+- strategy versioning
+- OOS discipline
+- where reports belong
+- commands to run tests
+- architecture boundaries
+
+Keep it concise.
+
+---
+
+# 28. CODING STANDARDS
+
+Use:
+
+- typed Python where practical
+- clear interfaces
+- docstrings where useful
+- deterministic functions
+- configuration instead of magic constants
+- structured logging
+- UTC internally
+- explicit timezone conversion
+- no secrets committed
+- no giant monolithic scripts
+
+Prefer understandable quantitative code over excessive abstraction.
+
+---
+
+# 29. FAILURE POLICY
+
+When blocked:
+
+DO NOT fabricate a workaround.
+
+Document:
+
+`BLOCKER`
+`WHY IT MATTERS`
+`WHAT DATA/ACCESS IS MISSING`
+`FREE ALTERNATIVES CHECKED`
+`RECOMMENDED NEXT ACTION`
+
+Then continue useful work elsewhere.
+
+A negative research result is a successful outcome if it prevents us from risking capital on a nonexistent edge.
+
+---
+
+# 30. USER OBJECTIVE
+
+The ultimate purpose is income.
+
+However:
+
+verified edge > attractive backtest
+
+repeatability > one lucky run
+
+capital survival > maximum growth
+
+after-cost profit > gross profit
+
+forward evidence > screenshots
+
+scalability > viral claims
+
+The system should eventually answer:
+
+1. Does an edge exist?
+2. How strong is it?
+3. How statistically credible is it?
+4. Does it survive costs?
+5. Does it survive out-of-sample?
+6. Does it survive live shadow testing?
+7. How much capital can it absorb?
+8. What is the expected drawdown?
+9. What bankroll is necessary to generate meaningful income?
+10. Is it sufficiently independent from our XAUUSD/FundingPips system?
+
+---
+
+# 31. START NOW
+
+Begin by inspecting the environment and creating the repository structure.
+
+Then:
+
+1. create `README.md`;
+2. create `AGENTS.md`;
+3. create `docs/ARCHITECTURE.md`;
+4. create `docs/RESEARCH_RULES.md`;
+5. create `docs/RISK_POLICY.md`;
+6. create `docs/COST_LEDGER.md`;
+7. research the current official prediction-market APIs;
+8. identify the best zero-cost historical dataset path;
+9. implement ingestion;
+10. implement normalized schemas;
+11. download a small validation sample;
+12. inspect actual data quality;
+13. implement PM-C1 baseline;
+14. run tests;
+15. run the first experiment;
+16. save a readable report.
+
+Do not merely produce a plan.
+
+Perform as much of Milestone 1 as the current environment allows.
+
+When something cannot be completed, state the precise blocker and continue with the remaining work.
+
+At the end provide:
+
+# WORK COMPLETED
+
+# FILES CREATED/CHANGED
+
+# TEST RESULTS
+
+# FIRST RESEARCH RESULTS
+
+# BLOCKERS
+
+# ZERO-COST STATUS
+
+# NEXT ACTION
+
+Do not claim profitability unless the evidence actually supports it.

@@ -1,0 +1,45 @@
+{
+  "checkpoint_at": "2026-10-02T09:21:33.618538+00:00",
+  "source_commit": "d4a58aad7ef28226183c994df5b3f5a45ff873b7",
+  "counts": {
+    "market_snapshot": 276,
+    "weather_forecast": 68,
+    "weather_observation": 9,
+    "forward_resolution": 6,
+    "weather_contract": 43,
+    "cohort_entry": 0,
+    "cohort_exclusion": 2
+  },
+  "cohort_nominations": 4,
+  "gap": {
+    "detected_at": "2026-10-02T09:14:19.478510+00:00",
+    "gap_seconds_at_detection": 52696.828945,
+    "last_heartbeat_at": "2026-10-01T18:36:02.649565+00:00",
+    "last_snapshot_at": "2026-10-01T18:36:02.647615+00:00",
+    "live_trading": false,
+    "missing_data_policy": "No backfill or fabricated cohort observations",
+    "reason": "Prior exec session unavailable; no recorder command present in current process inventory; stale lock PID belongs to prior namespace"
+  },
+  "verification": {
+    "valid": true,
+    "issues": [],
+    "raw_hashes_checked": 369,
+    "snapshots_checked": 276,
+    "source_archives_checked": 4,
+    "live_trading": false
+  },
+  "book_snapshots_replayed": 276,
+  "weather_forecasts_replayed": 68,
+  "tests_passed": 169,
+  "live_trading": false,
+  "paid_cost": 0,
+  "last_heartbeat": {
+    "live_trading": false,
+    "pid": 2,
+    "poll_seconds": 30,
+    "snapshots_this_cycle": 6,
+    "state": "COLLECTING",
+    "timestamp": "2026-10-02T09:21:25.643169+00:00",
+    "tracked": 12
+  }
+}

@@ -1,0 +1,711 @@
+Continue the existing PREDICTION-MARKET ALPHA SYSTEM from the repository and Milestone 1 work already completed.
+
+DO NOT rebuild the repository from scratch.
+
+Current verified state:
+
+- Milestone 1 framework exists.
+- 88 tests pass.
+- Git-versioned Python research system is working.
+- Polymarket/Kalshi ingestion infrastructure exists.
+- normalized schemas exist.
+- SQLite/audit storage exists.
+- calibration/backtesting framework exists.
+- OOS controls exist.
+- paper OMS exists.
+- live-money trading remains disabled.
+- current monetary cost is $0.
+- first PM-C1 attempt produced no valid trading result because the available historical data failed strict timestamp/execution-integrity requirements.
+- 100 settled Kalshi records were retrieved.
+- only 7 historical candle snapshots were usable enough for inspection.
+- 0 passed strict timestamp validity.
+- 0 valid simulated trades resulted.
+- no verified edge has been established.
+
+This is NOT a failure.
+
+The system correctly rejected invalid evidence.
+
+Now continue autonomously.
+
+# PRIMARY OBJECTIVE
+
+Move the project from:
+
+"research framework works"
+
+to:
+
+"we are collecting enough timestamp-valid, execution-valid data to determine whether a real prediction-market edge exists."
+
+Do not optimize for impressive backtests.
+
+Do not loosen the existing integrity requirements merely to obtain trades.
+
+Do not claim income or profitability yet.
+
+The end objective remains a small-capital automated income system, but only validated positive expectancy is acceptable.
+
+# COST REQUIREMENT
+
+Remain at:
+
+$0/month
+
+Do not introduce:
+
+- paid Grok
+- paid Jev
+- OpenAI API
+- Anthropic API
+- paid data
+- paid VPS
+- paid database
+- paid proxy
+- paid scraping tools
+
+Use local execution and free/public data.
+
+Update COST_LEDGER.md if anything changes.
+
+---
+
+# WORKSTREAM A — PM-C1 FORWARD DATA COLLECTION
+
+Historical reconstruction has reached diminishing returns because key historical information is missing.
+
+Stop wasting time trying to force invalid historical snapshots into the backtest.
+
+Build a proper FORWARD MARKET RECORDER.
+
+It must continuously record timestamped prediction-market state before outcomes occur.
+
+For every captured market snapshot store at minimum:
+
+- platform
+- market ID
+- event ID
+- question
+- category
+- resolution criteria
+- resolution source
+- market open time
+- expected resolution time
+- capture timestamp UTC
+- best YES bid
+- best YES ask
+- best NO bid
+- best NO ask
+- midpoint
+- last trade if available
+- quoted probability if separately provided
+- spread
+- volume
+- liquidity
+- order-book depth at several levels if freely accessible
+- fee information available at that time
+- market status
+- source endpoint
+- raw-response hash
+
+Capture immutable raw JSON where legally/technically appropriate.
+
+All captured observations must be append-only.
+
+Never alter old snapshots after the fact.
+
+---
+
+# MARKET CAPTURE FREQUENCY
+
+Determine the highest sensible FREE polling frequency that stays comfortably inside official rate limits.
+
+Document the rate-limit calculation.
+
+Prioritize enough temporal resolution to study:
+
+- calibration
+- stale prices
+- spread behavior
+- price movement before resolution
+- executable entry prices
+
+Do not violate API limits.
+
+Do not scrape when an official free API is available.
+
+---
+
+# MARKET UNIVERSE
+
+Do not indiscriminately save every junk market.
+
+Build a market eligibility filter.
+
+Prefer markets with:
+
+- clear binary outcome
+- unambiguous resolution source
+- reasonable liquidity
+- reasonable spread
+- known/observable settlement date
+- sufficient time remaining
+- objective resolution criteria
+
+Tag markets by category.
+
+At minimum distinguish:
+
+- weather
+- macro/economics
+- crypto
+- politics
+- sports
+- other objective
+- subjective/ambiguous
+
+Do not trade anything yet.
+
+This is data collection.
+
+---
+
+# PM-C1 FORWARD CALIBRATION COHORT
+
+Create a frozen forward cohort.
+
+Before outcomes are known, save a cohort definition containing:
+
+- inclusion criteria
+- exclusion criteria
+- observation time relative to resolution
+- probability buckets
+- minimum liquidity
+- maximum spread
+- eligible market categories
+
+After the cohort is frozen, do not change rules based on eventual winners/losers.
+
+Track:
+
+0–5%
+5–10%
+10–15%
+...
+90–95%
+95–100%
+
+When markets resolve, calculate:
+
+- empirical outcome frequency
+- Brier score
+- log loss
+- calibration error
+- reliability curve
+- sharpness
+- market baseline
+- calibration-model result
+
+PM-C1 must answer:
+
+"Does a transformation of quoted/executable prediction-market probabilities improve forecasting and create positive AFTER-COST trading expectancy?"
+
+Probability improvement alone is insufficient.
+
+---
+
+# EXECUTION REALISM
+
+Record enough information to distinguish:
+
+MARKET FORECASTING EDGE
+
+from:
+
+TRADABLE EDGE
+
+For hypothetical buys, use executable ask.
+
+For hypothetical exits/sells, use executable bid where relevant.
+
+Estimate actual fill capacity from available depth.
+
+Do not use midpoint as if it were executable.
+
+Track:
+
+- spread
+- fees
+- slippage assumption
+- available size
+- depth
+- hypothetical fill
+
+If an exact cost cannot be known, label the observation accordingly.
+
+Never silently set unknown cost to zero.
+
+---
+
+# WORKSTREAM B — START PM-W1 WEATHER RESEARCH
+
+PM-W1 is now the highest-priority NEW strategy family.
+
+Build it in parallel with PM-C1 forward collection because PM-C1 needs time for markets to resolve.
+
+Goal:
+
+Determine whether objective weather forecast information can identify mispriced prediction contracts.
+
+Do NOT start with an LLM.
+
+Use objective weather data.
+
+Research and implement FREE sources first, particularly official/public meteorological sources.
+
+Potential sources include:
+
+- NOAA
+- NWS
+- official station observations
+- public historical forecasts
+- public ensemble data where feasible
+- hurricane/storm advisories
+
+Before choosing a source, document:
+
+- endpoint
+- cost
+- availability
+- update schedule
+- timestamps
+- revisions
+- archive availability
+- rate limits
+- geographical coverage
+
+---
+
+# WEATHER-MARKET DETECTOR
+
+Implement a detector that identifies markets concerning:
+
+- maximum temperature
+- minimum temperature
+- precipitation
+- snowfall where data is usable
+- tropical storms/hurricanes
+- other objectively resolved weather variables
+
+For every detected weather market attempt to determine:
+
+- city/location
+- station if specified
+- date
+- variable
+- threshold
+- units
+- resolution source
+- observation period
+- timezone
+- exact contract wording
+
+Reject ambiguous contracts.
+
+---
+
+# RESOLUTION PARSER
+
+Weather contracts can appear simple while hiding resolution traps.
+
+Build a parser that records:
+
+- station/source used for resolution
+- local date/time window
+- rounding rules
+- whether preliminary or final observations count
+- units
+- threshold inequality
+
+Example distinction:
+
+"above 100°F"
+
+is not automatically equivalent to:
+
+"100°F or higher."
+
+Never infer a rule if contract text specifies something different.
+
+---
+
+# WEATHER FORECAST ARCHIVE
+
+The core requirement is timestamp-safe forecasts.
+
+For every weather forecast store:
+
+- forecast target
+- forecast issue time
+- time first available
+- forecast horizon
+- location/station
+- deterministic forecast if available
+- ensemble members if available
+- source/model
+- raw response hash
+
+Backtests may only use a forecast if:
+
+available_time <= simulated_trade_time
+
+Build automated leakage tests.
+
+---
+
+# PM-W1 BASELINE MODEL
+
+Start simple.
+
+Do not build neural networks.
+
+First establish whether basic probabilistic forecasting works.
+
+For threshold event:
+
+P(T > threshold)
+
+or the exact contract equivalent.
+
+Possible baseline construction:
+
+forecast mean
++
+historically estimated forecast error distribution
+=
+event probability.
+
+Estimate forecast-error distributions using only training data.
+
+Consider:
+
+- station
+- forecast horizon
+- season
+- temperature regime
+- model/source
+
+but avoid unnecessary parameter explosion.
+
+Test simple models before complex ones.
+
+---
+
+# PM-W1 MARKET EDGE
+
+For each eligible weather market compute:
+
+model_probability
+
+versus:
+
+executable_market_probability.
+
+For YES purchase:
+
+market cost should correspond to executable YES ask.
+
+Calculate:
+
+raw expected value
+
+then subtract:
+
+- platform fees
+- spread
+- expected slippage
+- uncertainty buffer
+
+A candidate trade exists only when net expected value remains positive.
+
+Do not choose an arbitrary 8% threshold because a viral bot did.
+
+Research the threshold using TRAIN/VALIDATION only.
+
+Freeze it before final TEST.
+
+---
+
+# WORKSTREAM C — FREE MICROSTRUCTURE FEASIBILITY
+
+Do a limited feasibility investigation for PM-M1 while the collectors run.
+
+Do NOT spend most of the development time here yet.
+
+Determine whether free APIs can provide sufficient timestamps/order-book depth for:
+
+1. crypto underlying price
+2. corresponding prediction contracts
+
+Measure data latency and practical synchronization.
+
+Do not claim arbitrage.
+
+Deliver only:
+
+- data feasibility
+- achievable polling frequency
+- timestamp resolution
+- order-book availability
+- expected implementation limitations
+
+If free data cannot support this properly, mark PM-M1:
+
+DEFERRED_DATA_LIMITATION
+
+and move on.
+
+---
+
+# DO NOT BUILD AI AGENTS YET
+
+PM-A1 remains deferred.
+
+Do not spend time building six-agent Grok/Jev clones.
+
+First establish whether:
+
+- calibration
+- weather
+- structured data
+- microstructure
+
+contain measurable edge.
+
+Only later test whether AI adds incremental forecasting skill.
+
+---
+
+# RISK ENGINE
+
+Keep current research limits:
+
+normal maximum position loss = 0.25% bankroll
+
+absolute maximum position loss = 0.50%
+
+correlated event-cluster maximum worst-case exposure = 1.00%
+
+No martingale.
+
+No loss chasing.
+
+No AI authority over risk.
+
+However, no real-money execution should be enabled yet.
+
+LIVE_TRADING must remain false.
+
+---
+
+# SMALL-CAPITAL OBJECTIVE
+
+Design with the intended use case in mind:
+
+We do NOT have large personal capital.
+
+Therefore when evaluating candidates report:
+
+- minimum practical bankroll
+- minimum order size
+- fees as % of small trades
+- spread burden
+- capacity
+- turnover
+- expected trades/month
+- expected return on bankroll
+- expected maximum drawdown
+- probability of meaningful bankroll loss
+
+A strategy requiring $20,000 to function is not useful for the initial objective even if theoretically profitable.
+
+However, never increase risk merely to compensate for small capital.
+
+---
+
+# AUTOMATED DAILY RESEARCH REPORT
+
+Build a report generator for the forward collector.
+
+Example:
+
+reports/forward/YYYY-MM-DD.md
+
+Include:
+
+- markets tracked
+- snapshots collected
+- API failures
+- missing data
+- median spreads
+- liquidity statistics
+- category counts
+- newly resolved markets
+- PM-C1 calibration sample growth
+- weather markets detected
+- candidate PM-W1 signals
+- hypothetical trades
+- data-integrity violations
+- zero-cost status
+
+No profitability claims until sufficient resolved samples exist.
+
+---
+
+# HEALTH MONITORING
+
+Create collector health checks for:
+
+- process alive
+- API reachable
+- database writable
+- stale data
+- duplicate snapshots
+- timezone errors
+- malformed order books
+- unexpected schema changes
+- rate-limit errors
+
+The collector must fail visibly rather than silently stop collecting.
+
+---
+
+# DATA VOLUME CONTROL
+
+Because this must remain free/local:
+
+- compress raw responses where useful
+- avoid uncontrolled database growth
+- deduplicate immutable metadata
+- retain all information needed for reproducibility
+- estimate disk growth/day and month
+
+Document projected storage consumption.
+
+---
+
+# TESTS
+
+Expand the existing 88-test suite.
+
+Add tests for:
+
+- forward collector
+- API-rate limiter
+- append-only behavior
+- snapshot uniqueness
+- bid/ask consistency
+- order-book parsing
+- market eligibility
+- resolution parsing
+- weather-contract parsing
+- timezone handling
+- forecast availability timestamps
+- weather leakage detection
+- probability calculation
+- expected-value calculation
+- small-bankroll sizing
+- correlated exposure
+
+Do not weaken existing tests.
+
+---
+
+# REQUIRED OUTPUTS
+
+Create/update at minimum:
+
+docs/FORWARD_DATA_PROTOCOL.md
+docs/PM_C1_FORWARD_PROTOCOL.md
+docs/PM_W1_SPEC.md
+docs/FREE_DATA_SOURCES.md
+docs/COST_LEDGER.md
+docs/STRATEGY_REGISTRY.md
+docs/DATA_LIMITATIONS.md
+
+and working code for:
+
+- market forward collector
+- weather market detector
+- free weather data adapter
+- forward calibration cohort
+- report generator
+- health monitor
+
+---
+
+# RESEARCH DISCIPLINE
+
+Do not repeatedly modify a strategy until it looks profitable.
+
+Maintain version history.
+
+A failed hypothesis gets recorded.
+
+A blocked hypothesis gets recorded.
+
+The purpose is to FIND edge, not manufacture it.
+
+---
+
+# WHAT TO DO RIGHT NOW
+
+1. Inspect the existing repo and Milestone 1 report.
+2. Run all existing tests and confirm the known baseline.
+3. Do NOT overwrite existing research.
+4. Implement the append-only forward market collector.
+5. Start collecting timestamp-valid market data.
+6. Freeze the first PM-C1 forward cohort.
+7. Research free official weather-data sources.
+8. Build the weather-market detector.
+9. Build PM-W1 timestamp-safe forecast ingestion.
+10. Implement the simplest PM-W1 probability baseline.
+11. Run all tests.
+12. Generate human-readable reports.
+13. Commit the work.
+14. Keep LIVE_TRADING=false.
+15. Keep total cost at $0.
+
+Do not stop after writing documentation.
+
+Implement and test as much as the environment allows.
+
+# FINAL RESPONSE FORMAT
+
+At the end report exactly:
+
+## WORK COMPLETED
+
+## CURRENT DATA COLLECTION STATUS
+
+## PM-C1 STATUS
+
+## PM-W1 STATUS
+
+## PM-M1 FEASIBILITY
+
+## TEST RESULTS
+
+## FILES CREATED/CHANGED
+
+## CURRENT RESEARCH EVIDENCE
+
+## BLOCKERS
+
+## COST STATUS
+
+## NEXT AUTONOMOUS ACTION
+
+Most importantly:
+
+Do not tell me the strategy is profitable unless forward/out-of-sample evidence actually demonstrates it.

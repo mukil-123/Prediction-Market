@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://docs.kalshi.com/getting_started/quick_start_market_data",
+    "available_time": "2026-10-11T18:39:02.104754+00:00",
+    "method": "GET",
+    "status": null,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "reviewed": false
+  },
+  {
+    "url": "https://kalshi.com/docs/kalshi-fee-schedule.pdf",
+    "available_time": "2026-10-11T18:39:02.119089+00:00",
+    "method": "GET",
+    "status": null,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "reviewed": false
+  },
+  {
+    "url": "https://docs.polymarket.com/trading/fees",
+    "available_time": "2026-10-11T18:39:02.122628+00:00",
+    "method": "GET",
+    "status": null,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "reviewed": false
+  }
+]

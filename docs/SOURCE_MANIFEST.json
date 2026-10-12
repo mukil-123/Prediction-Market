@@ -1,0 +1,173 @@
+{
+  "reviewed_at_utc": "2026-10-01",
+  "docs_downloads": [
+    {
+      "url": "https://docs.polymarket.com/resources/blockchain-data.md",
+      "retrieved_at": "2026-10-01T13:08:02.544043+00:00",
+      "sha256": "c1078ebd8d9f9b7c7de2a9b9f6a228e3348d589a2ae5af164b742494eb0b60be"
+    },
+    {
+      "url": "https://docs.polymarket.com/trading/fees.md",
+      "retrieved_at": "2026-10-01T13:07:52.920950+00:00",
+      "sha256": "8a36114f1cca20bacf255167e4c2db60f805729e57e663362ebb60e9f66b8ea3"
+    },
+    {
+      "url": "https://docs.polymarket.com/api-reference/geoblock.md",
+      "retrieved_at": "2026-10-01T13:07:52.963268+00:00",
+      "sha256": "0d1781d90539ae914c2e560ea081318d4854f6e79816ebf6eac4c3fdafc53d1b"
+    },
+    {
+      "url": "https://docs.polymarket.com/api-reference/markets/get-a-tokens-price-history.md",
+      "retrieved_at": "2026-10-01T13:08:30.381192+00:00",
+      "sha256": "de937c669c17a52dce3c6f5ef9f15bf78757147865f14e16718401443b72b6f1"
+    },
+    {
+      "url": "https://docs.polymarket.com/api-reference/markets/get-clob-market-info.md",
+      "retrieved_at": "2026-10-01T13:08:39.572072+00:00",
+      "sha256": "b6e72949b7dc1c8c6cf97a1657a3dcd0f7aa145ca4ca9c82d9f9f77110b4e1a4"
+    },
+    {
+      "url": "https://docs.polymarket.com/api-reference/market-data/get-fee-rate.md",
+      "retrieved_at": "2026-10-01T13:08:39.684172+00:00",
+      "sha256": "b84cebb21192fe763d9e31b0935ba10c0ac52aea6d52bf5ffc98f375db9b4cb3"
+    },
+    {
+      "url": "https://docs.polymarket.com/api-reference/markets/get-prices-history.md",
+      "retrieved_at": "2026-10-01T13:08:30.423453+00:00",
+      "sha256": "874352790065249c6014f64e5679b3f2fc4543318c9f8031007c4b4bd6b8c6b6"
+    },
+    {
+      "url": "https://docs.polymarket.com/api-reference/markets/get-resolution-state.md",
+      "retrieved_at": "2026-10-01T13:08:39.596430+00:00",
+      "sha256": "7262a52c3dc41712ea69c0da5487524441227003bd296187b4859b165bc552da"
+    },
+    {
+      "url": "https://docs.polymarket.com/api-reference/markets/list-markets-keyset-pagination.md",
+      "retrieved_at": "2026-10-01T13:08:30.405488+00:00",
+      "sha256": "d625b445c1e428075a1ced6b877fd1d15a5ffd9681d9f3b784436676f875567d"
+    },
+    {
+      "url": "https://docs.polymarket.com/api-reference/markets/list-markets.md",
+      "retrieved_at": "2026-10-01T13:08:30.453962+00:00",
+      "sha256": "b4d5da67c7426730ab21bc97fa9bb3c7f4a92e232d4c62f2a79bb63855c96ef2"
+    },
+    {
+      "url": "https://docs.polymarket.com/market-data/market-details.md",
+      "retrieved_at": "2026-10-01T13:08:02.498405+00:00",
+      "sha256": "f4efeac64cf06bd5fc393a49bbdf3b568838acf2acf5da66a9845f9c3ac6aab8"
+    },
+    {
+      "url": "https://docs.polymarket.com/trading/place-orders.md",
+      "retrieved_at": "2026-10-01T13:07:53.170337+00:00",
+      "sha256": "a4f4c35f05bf624b9a752eda2552b4770953535fc4fcd03eaa5c9fa3b504c85b"
+    },
+    {
+      "url": "https://docs.polymarket.com/_llms/en/api-reference/predictions.md",
+      "retrieved_at": "2026-10-01T13:07:53.175258+00:00",
+      "sha256": "08123915e9a33674f38dec2e3c84b9885b4f787a6a080c739e160cf7aec59485"
+    },
+    {
+      "url": "https://docs.polymarket.com/market-data/prices-order-books.md",
+      "retrieved_at": "2026-10-01T13:08:02.503833+00:00",
+      "sha256": "3e123e9c021d443ffe6e73210bfef26d6b2abb4cb2f6542f2733af5e3b4d9de4"
+    },
+    {
+      "url": "https://docs.polymarket.com/api-reference/rate-limits.md",
+      "retrieved_at": "2026-10-01T13:07:52.924325+00:00",
+      "sha256": "bd79904e300d52e1730ad7c6b5e49c6b622d8fc4a6be805a6da3327ae904e7ba"
+    },
+    {
+      "url": "https://docs.polymarket.com/concepts/resolution.md",
+      "retrieved_at": "2026-10-01T13:08:02.527370+00:00",
+      "sha256": "3b3b451bf156867ec9fc39244eee6b0531218c81515f7a3582dd48d344a281f3"
+    },
+    {
+      "url": "https://docs.polymarket.com/trading/wallets-auth.md",
+      "retrieved_at": "2026-10-01T13:08:02.503414+00:00",
+      "sha256": "f3b787d0aeaac07cf82f5a7de22b5dddbf9b3976c9a3752384d535f5debdf108"
+    }
+  ],
+  "other_primary_pages_consulted": [
+    "https://docs.kalshi.com/getting_started/quick_start_market_data",
+    "https://docs.kalshi.com/api-reference/market/get-markets",
+    "https://docs.kalshi.com/api-reference/market/get-market-candlesticks",
+    "https://docs.kalshi.com/getting_started/historical_data",
+    "https://docs.kalshi.com/getting_started/rate_limits",
+    "https://docs.kalshi.com/getting_started/market_lifecycle",
+    "https://kalshi.com/docs/kalshi-fee-schedule.pdf",
+    "https://kalshi.com/docs/kalshi-member-agreement.pdf",
+    "https://help.kalshi.com/en/articles/14026044-can-i-trade-on-kalshi-from-outside-the-united-states",
+    "https://github.com/bl888m/jev-bot",
+    "https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf"
+  ],
+  "market_data_provenance": "content-addressed data/raw + data/local.sqlite retrieval audit",
+  "copyright_note": "Full third-party documentation not redistributed.",
+  "forward_documentation_checks": [
+    {
+      "url": "https://www.weather.gov/documentation/services-web-api",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    },
+    {
+      "url": "https://nomads.ncep.noaa.gov/",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    },
+    {
+      "url": "https://emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gefs.php/",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/data/",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    },
+    {
+      "url": "https://docs.kalshi.com/api-reference/market/get-series",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    },
+    {
+      "url": "https://docs.kalshi.com/getting_started/rate_limits",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    },
+    {
+      "url": "https://docs.polymarket.com/api-reference/rate-limits",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    },
+    {
+      "url": "https://docs.cdp.coinbase.com/exchange/rest-api/rate-limits",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    },
+    {
+      "url": "https://docs.kraken.com/api-reference/market-data/get-order-book",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    },
+    {
+      "url": "https://docs.python.org/3/library/zoneinfo.html",
+      "checked_date_utc": "2026-10-01",
+      "method": "official documentation retrieved with web search/open; API responses separately hashed in forward ledger",
+      "raw_http_document_hash": null
+    }
+  ]
+}

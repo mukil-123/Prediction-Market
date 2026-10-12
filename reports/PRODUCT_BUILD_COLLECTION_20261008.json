@@ -1,0 +1,176 @@
+{
+  "as_of_utc": "2026-10-08T10:45:58.752708+00:00",
+  "counts": {
+    "cohort_definition": 3,
+    "cohort_exclusion": 8,
+    "cohort_representative": 18,
+    "cohort_retirement": 2,
+    "collector_heartbeat": 1003,
+    "collector_runtime_gap": 7,
+    "forward_api_failure": 9,
+    "forward_cadence_warning": 56,
+    "forward_coverage_gap": 28,
+    "forward_discovery_exclusion": 408,
+    "forward_integrity": 9,
+    "forward_metadata": 88,
+    "forward_resolution": 60,
+    "forward_retrieval": 1224,
+    "forward_source_failure": 7,
+    "forward_universe": 28,
+    "market_snapshot": 730,
+    "microstructure_binance_feasibility": 1,
+    "microstructure_failure": 2,
+    "microstructure_summary": 1,
+    "recorder_manifest": 14,
+    "retrieval": 7,
+    "weather_contract": 70,
+    "weather_forecast": 218,
+    "weather_observation": 25,
+    "weather_source_failure": 2
+  },
+  "audit_valid": true,
+  "book_snapshots_replayed": 730,
+  "weather_forecasts_replayed": 218,
+  "deterministic_replay_valid": true,
+  "replay_issues": [],
+  "cohort": {
+    "entries": 0,
+    "exclusions": 8,
+    "resolved_train": 0,
+    "market_baseline": null,
+    "probability_buckets": [
+      {
+        "bucket": "0\u20135%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "5\u201310%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "10\u201315%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "15\u201320%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "20\u201325%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "25\u201330%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "30\u201335%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "35\u201340%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "40\u201345%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "45\u201350%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "50\u201355%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "55\u201360%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "60\u201365%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "65\u201370%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "70\u201375%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "75\u201380%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "80\u201385%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "85\u201390%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "90\u201395%",
+        "n": 0,
+        "empirical_frequency": null
+      },
+      {
+        "bucket": "95\u2013100%",
+        "n": 0,
+        "empirical_frequency": null
+      }
+    ],
+    "calibration_model_result": null,
+    "after_cost_result": null,
+    "test_opened": false
+  },
+  "health": {
+    "process_alive": true,
+    "heartbeat_age_seconds": 0.76989,
+    "state": "COLLECTING",
+    "database_writable": true,
+    "stale_data": false,
+    "future_timestamps": 0,
+    "duplicate_snapshots": 0,
+    "api_reachable": {
+      "external-api.kalshi.com": true,
+      "gamma-api.polymarket.com": true,
+      "api.weather.gov": true,
+      "api.exchange.coinbase.com": false,
+      "api.kraken.com": false
+    },
+    "audit_valid": true,
+    "last_snapshot_age_seconds": 0.770692,
+    "stale_markets": [],
+    "rate_limit_errors": 0,
+    "malformed_schema_or_books": 9,
+    "live_trading": false,
+    "healthy": true
+  },
+  "cohort_sha256": "cc9f69d812d99b80d120c1e63a54287d85dc776bb0645c57f2e5899a5830e3d0",
+  "live_trading": false,
+  "real_orders": 0,
+  "verified_profitable_edge": false,
+  "cost_usd": 0,
+  "database_sha256": "1fd4936b6e4ff2312072fb343bd3f598deda25a188c8cc6dad6b2bdbf6e3ecb2"
+}

@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.env
+data/cache/
+data/local*.sqlite*
+*.pem
+*.key
+*.bundle
+ARTIFACT_MANIFEST.json
+data/recorder.lock
+data/STOP_COLLECTOR
+data/collector_health.json
+data/*-wal
+data/*-shm
